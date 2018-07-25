@@ -1,0 +1,36 @@
+    
+.m-aside-menu
+.m-aside-menu--skin-dark 
+.m-menu__nav > .m-menu__item:not(.m-menu__item--parent):not(.m-menu__item--open):not(.m-menu__item--expanded):not(.m-menu__item--active):hover > 
+.m-menu__heading .m-menu__link-icon, 
+.m-aside-menu.m-aside-menu--skin-dark
+.m-menu__nav > .m-menu__item:not(.m-menu__item--parent):not(.m-menu__item--open):not(.m-menu__item--expanded):not(.m-menu__item--active):hover > 
+.m-menu__link 
+.m-menu__link-icon {
+    color: #ffb822 !important;
+}
+
+
+
+
+@media (min-width: 1025px){
+.m-aside-left--minimize .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item {
+    background: 0 0;
+    padding: 12px 0 12px 0 !important;
+}
+
+.m-aside-left--minimize .m-aside-menu .m-menu__nav {
+    padding: 0 !important;
+}
+}
+
+.m-menu__item.m-menu__item--submenu {
+    padding: 10px 0px 10px 0px !important;
+}
+
+.m-menu__nav.m-menu__nav--dropdown-submenu-arrow {
+    padding: 0px !important;
+}
+
+
+

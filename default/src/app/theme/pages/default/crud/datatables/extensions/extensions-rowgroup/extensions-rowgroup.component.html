@@ -1,0 +1,1956 @@
+<!-- BEGIN: Subheader -->
+<div class="m-subheader" appunwraptag="">
+	<div class="d-flex align-items-center">
+		<div class="mr-auto">
+			<h3 class="m-subheader__title m-subheader__title--separator">
+				RowGroup Examples
+			</h3>
+			<ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+				<li class="m-nav__item m-nav__item--home">
+					<a href="#" class="m-nav__link m-nav__link--icon">
+						<i class="m-nav__link-icon la la-home"></i>
+					</a>
+				</li>
+				<li class="m-nav__separator">
+					-
+				</li>
+				<li class="m-nav__item">
+					<a href="" class="m-nav__link">
+						<span class="m-nav__link-text">
+							DataTables
+						</span>
+					</a>
+				</li>
+				<li class="m-nav__separator">
+					-
+				</li>
+				<li class="m-nav__item">
+					<a href="" class="m-nav__link">
+						<span class="m-nav__link-text">
+							Extensions
+						</span>
+					</a>
+				</li>
+				<li class="m-nav__separator">
+					-
+				</li>
+				<li class="m-nav__item">
+					<a href="" class="m-nav__link">
+						<span class="m-nav__link-text">
+							RowGroup
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
+				<a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
+					<i class="la la-plus m--hide"></i>
+					<i class="la la-ellipsis-h"></i>
+				</a>
+				<div class="m-dropdown__wrapper">
+					<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+					<div class="m-dropdown__inner">
+						<div class="m-dropdown__body">
+							<div class="m-dropdown__content">
+								<ul class="m-nav">
+									<li class="m-nav__section m-nav__section--first m--hide">
+										<span class="m-nav__section-text">
+											Quick Actions
+										</span>
+									</li>
+									<li class="m-nav__item">
+										<a href="" class="m-nav__link">
+											<i class="m-nav__link-icon flaticon-share"></i>
+											<span class="m-nav__link-text">
+												Activity
+											</span>
+										</a>
+									</li>
+									<li class="m-nav__item">
+										<a href="" class="m-nav__link">
+											<i class="m-nav__link-icon flaticon-chat-1"></i>
+											<span class="m-nav__link-text">
+												Messages
+											</span>
+										</a>
+									</li>
+									<li class="m-nav__item">
+										<a href="" class="m-nav__link">
+											<i class="m-nav__link-icon flaticon-info"></i>
+											<span class="m-nav__link-text">
+												FAQ
+											</span>
+										</a>
+									</li>
+									<li class="m-nav__item">
+										<a href="" class="m-nav__link">
+											<i class="m-nav__link-icon flaticon-lifebuoy"></i>
+											<span class="m-nav__link-text">
+												Support
+											</span>
+										</a>
+									</li>
+									<li class="m-nav__separator m-nav__separator--fit"></li>
+									<li class="m-nav__item">
+										<a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
+											Submit
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END: Subheader -->
+<div class="m-content">
+	<div class="m-alert m-alert--icon m-alert--air m-alert--square alert alert-dismissible m--margin-bottom-30" role="alert">
+		<div class="m-alert__icon">
+			<i class="flaticon-exclamation m--font-brand"></i>
+		</div>
+		<div class="m-alert__text">
+			RowGroup adds this ability to DataTables with the ability to customise the start and end grouping rows displayed in the DataTable, letting you integrate the summarised data to fit perfectly in with your site. 		See official documentation
+			<a href="https://datatables.net/extensions/rowgroup/" >
+				here
+			</a>
+			.
+		</div>
+	</div>
+	<div class="m-portlet m-portlet--mobile">
+		<div class="m-portlet__head">
+			<div class="m-portlet__head-caption">
+				<div class="m-portlet__head-title">
+					<h3 class="m-portlet__head-text">
+						RowGroup DataTable
+					</h3>
+				</div>
+			</div>
+			<div class="m-portlet__head-tools">
+				<ul class="m-portlet__nav">
+					<li class="m-portlet__nav-item">
+						<a href="#" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air">
+							<span>
+								<i class="la la-cart-plus"></i>
+								<span>
+									New Order
+								</span>
+							</span>
+						</a>
+					</li>
+					<li class="m-portlet__nav-item"></li>
+					<li class="m-portlet__nav-item">
+						<div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
+							<a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
+								<i class="la la-ellipsis-h m--font-brand"></i>
+							</a>
+							<div class="m-dropdown__wrapper">
+								<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+								<div class="m-dropdown__inner">
+									<div class="m-dropdown__body">
+										<div class="m-dropdown__content">
+											<ul class="m-nav">
+												<li class="m-nav__section m-nav__section--first">
+													<span class="m-nav__section-text">
+														Quick Actions
+													</span>
+												</li>
+												<li class="m-nav__item">
+													<a href="" class="m-nav__link">
+														<i class="m-nav__link-icon flaticon-share"></i>
+														<span class="m-nav__link-text">
+															Create Post
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__item">
+													<a href="" class="m-nav__link">
+														<i class="m-nav__link-icon flaticon-chat-1"></i>
+														<span class="m-nav__link-text">
+															Send Messages
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__item">
+													<a href="" class="m-nav__link">
+														<i class="m-nav__link-icon flaticon-multimedia-2"></i>
+														<span class="m-nav__link-text">
+															Upload File
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__section">
+													<span class="m-nav__section-text">
+														Useful Links
+													</span>
+												</li>
+												<li class="m-nav__item">
+													<a href="" class="m-nav__link">
+														<i class="m-nav__link-icon flaticon-info"></i>
+														<span class="m-nav__link-text">
+															FAQ
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__item">
+													<a href="" class="m-nav__link">
+														<i class="m-nav__link-icon flaticon-lifebuoy"></i>
+														<span class="m-nav__link-text">
+															Support
+														</span>
+													</a>
+												</li>
+												<li class="m-nav__separator m-nav__separator--fit m--hide"></li>
+												<li class="m-nav__item m--hide">
+													<a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
+														Submit
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="m-portlet__body">
+			<!--begin: Datatable -->
+			<table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
+				<thead>
+					<tr>
+						<th>
+							RecordID
+						</th>
+						<th>
+							OrderID
+						</th>
+						<th>
+							Country
+						</th>
+						<th>
+							ShipCity
+						</th>
+						<th>
+							ShipAddress
+						</th>
+						<th>
+							CompanyAgent
+						</th>
+						<th>
+							CompanyName
+						</th>
+						<th>
+							ShipDate
+						</th>
+						<th>
+							Status
+						</th>
+						<th>
+							Type
+						</th>
+						<th>
+							Actions
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							259
+						</td>
+						<td>
+							60429-081
+						</td>
+						<td>
+							Argentina
+						</td>
+						<td>
+							La Tigra
+						</td>
+						<td>
+							90574 Holmberg Pass
+						</td>
+						<td>
+							Leelah McGaraghan
+						</td>
+						<td>
+							Shanahan, Sanford and Pfannerstill
+						</td>
+						<td>
+							9/16/2016
+						</td>
+						<td>
+							6
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							112
+						</td>
+						<td>
+							43538-171
+						</td>
+						<td>
+							Argentina
+						</td>
+						<td>
+							Oberá
+						</td>
+						<td>
+							79213 Orin Street
+						</td>
+						<td>
+							Kalli Gusticke
+						</td>
+						<td>
+							Hegmann-Nitzsche
+						</td>
+						<td>
+							10/26/2016
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							195
+						</td>
+						<td>
+							36987-1902
+						</td>
+						<td>
+							Armenia
+						</td>
+						<td>
+							Aghavnadzor
+						</td>
+						<td>
+							1722 Acker Pass
+						</td>
+						<td>
+							Niall Manton
+						</td>
+						<td>
+							Kirlin and Sons
+						</td>
+						<td>
+							12/24/2017
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							83
+						</td>
+						<td>
+							58232-0030
+						</td>
+						<td>
+							Armenia
+						</td>
+						<td>
+							Norashen
+						</td>
+						<td>
+							7 Northridge Pass
+						</td>
+						<td>
+							Hyacinthe Couronne
+						</td>
+						<td>
+							Mertz-Kessler
+						</td>
+						<td>
+							10/30/2016
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							322
+						</td>
+						<td>
+							10237-739
+						</td>
+						<td>
+							Armenia
+						</td>
+						<td>
+							Getahovit
+						</td>
+						<td>
+							117 Londonderry Road
+						</td>
+						<td>
+							North Kington
+						</td>
+						<td>
+							Harber, Wuckert and Dare
+						</td>
+						<td>
+							3/13/2017
+						</td>
+						<td>
+							4
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							342
+						</td>
+						<td>
+							50211-001
+						</td>
+						<td>
+							Australia
+						</td>
+						<td>
+							Eastern Suburbs Mc
+						</td>
+						<td>
+							2 Thackeray Street
+						</td>
+						<td>
+							Cathrin Tarren
+						</td>
+						<td>
+							Miller-Quigley
+						</td>
+						<td>
+							1/23/2018
+						</td>
+						<td>
+							4
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							28
+						</td>
+						<td>
+							49035-522
+						</td>
+						<td>
+							Australia
+						</td>
+						<td>
+							Eastern Suburbs Mc
+						</td>
+						<td>
+							074 Algoma Drive
+						</td>
+						<td>
+							Heddi Castelli
+						</td>
+						<td>
+							Kessler and Sons
+						</td>
+						<td>
+							1/12/2017
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							5
+						</td>
+						<td>
+							31722-529
+						</td>
+						<td>
+							Austria
+						</td>
+						<td>
+							Sankt Andrä-Höch
+						</td>
+						<td>
+							3038 Trailsway Junction
+						</td>
+						<td>
+							Tierney St. Louis
+						</td>
+						<td>
+							Dicki-Kling
+						</td>
+						<td>
+							5/20/2017
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							186
+						</td>
+						<td>
+							64893-903
+						</td>
+						<td>
+							Bangladesh
+						</td>
+						<td>
+							Pirojpur
+						</td>
+						<td>
+							40 Magdeline Trail
+						</td>
+						<td>
+							Gabbie Marrow
+						</td>
+						<td>
+							Balistreri LLC
+						</td>
+						<td>
+							9/29/2016
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							183
+						</td>
+						<td>
+							43853-0010
+						</td>
+						<td>
+							Belarus
+						</td>
+						<td>
+							Shchuchin
+						</td>
+						<td>
+							378 Fairview Terrace
+						</td>
+						<td>
+							Nadine Cary
+						</td>
+						<td>
+							Ebert, Dickinson and Koelpin
+						</td>
+						<td>
+							7/23/2017
+						</td>
+						<td>
+							4
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							81
+						</td>
+						<td>
+							67596-001
+						</td>
+						<td>
+							Belarus
+						</td>
+						<td>
+							Horad Rechytsa
+						</td>
+						<td>
+							15 Towne Way
+						</td>
+						<td>
+							Byrle Scorey
+						</td>
+						<td>
+							Cassin, Renner and Jerde
+						</td>
+						<td>
+							12/30/2016
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							290
+						</td>
+						<td>
+							62985-5081
+						</td>
+						<td>
+							Belize
+						</td>
+						<td>
+							Placencia
+						</td>
+						<td>
+							81 Thierer Junction
+						</td>
+						<td>
+							Roz Garrison
+						</td>
+						<td>
+							Kutch, Zulauf and Bahringer
+						</td>
+						<td>
+							5/26/2016
+						</td>
+						<td>
+							6
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							206
+						</td>
+						<td>
+							49035-321
+						</td>
+						<td>
+							Bosnia and Herzegovina
+						</td>
+						<td>
+							Velagići
+						</td>
+						<td>
+							925 Birchwood Drive
+						</td>
+						<td>
+							Bartram Aughton
+						</td>
+						<td>
+							Corkery, Schoen and Hagenes
+						</td>
+						<td>
+							4/17/2016
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							18
+						</td>
+						<td>
+							11673-479
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Conceição das Alagoas
+						</td>
+						<td>
+							191 Stone Corner Road
+						</td>
+						<td>
+							Michaelina Plenderleith
+						</td>
+						<td>
+							Legros-Gleichner
+						</td>
+						<td>
+							2/21/2018
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							11
+						</td>
+						<td>
+							54092-515
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Canguaretama
+						</td>
+						<td>
+							32461 Ridgeway Alley
+						</td>
+						<td>
+							Sibyl Amy
+						</td>
+						<td>
+							Treutel-Ratke
+						</td>
+						<td>
+							3/8/2017
+						</td>
+						<td>
+							4
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							343
+						</td>
+						<td>
+							68084-747
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Flores da Cunha
+						</td>
+						<td>
+							9 Mariners Cove Place
+						</td>
+						<td>
+							Chick Creany
+						</td>
+						<td>
+							Mueller-DuBuque
+						</td>
+						<td>
+							4/28/2018
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							338
+						</td>
+						<td>
+							46123-036
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Torres
+						</td>
+						<td>
+							3 Northfield Avenue
+						</td>
+						<td>
+							Myrilla Denyukin
+						</td>
+						<td>
+							Bauch Group
+						</td>
+						<td>
+							6/9/2016
+						</td>
+						<td>
+							6
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							191
+						</td>
+						<td>
+							60429-617
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Simão Dias
+						</td>
+						<td>
+							3090 Nobel Way
+						</td>
+						<td>
+							Aguste Trevain
+						</td>
+						<td>
+							Farrell-Collins
+						</td>
+						<td>
+							3/9/2016
+						</td>
+						<td>
+							3
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							257
+						</td>
+						<td>
+							54868-4635
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Marau
+						</td>
+						<td>
+							0 Swallow Park
+						</td>
+						<td>
+							Cristal Thurlborn
+						</td>
+						<td>
+							Nolan, Auer and Kunde
+						</td>
+						<td>
+							3/6/2018
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							307
+						</td>
+						<td>
+							65162-752
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Arroio do Meio
+						</td>
+						<td>
+							7310 5th Terrace
+						</td>
+						<td>
+							Collette Petrelluzzi
+						</td>
+						<td>
+							Kuphal-Hickle
+						</td>
+						<td>
+							11/4/2017
+						</td>
+						<td>
+							4
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							179
+						</td>
+						<td>
+							43269-904
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Itambé
+						</td>
+						<td>
+							559 Algoma Avenue
+						</td>
+						<td>
+							Jasper Wrighton
+						</td>
+						<td>
+							Roob-Balistreri
+						</td>
+						<td>
+							4/3/2016
+						</td>
+						<td>
+							4
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							56
+						</td>
+						<td>
+							41163-367
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Jardim do Seridó
+						</td>
+						<td>
+							942 Marquette Trail
+						</td>
+						<td>
+							Mavis Chazelle
+						</td>
+						<td>
+							Rodriguez, Berge and Rempel
+						</td>
+						<td>
+							2/6/2017
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							273
+						</td>
+						<td>
+							68472-079
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Blumenau
+						</td>
+						<td>
+							330 Bunker Hill Crossing
+						</td>
+						<td>
+							Dita Ditty
+						</td>
+						<td>
+							Herzog, Bartell and Johns
+						</td>
+						<td>
+							11/13/2016
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							198
+						</td>
+						<td>
+							58930-038
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Bariri
+						</td>
+						<td>
+							199 Quincy Alley
+						</td>
+						<td>
+							Blake Colliss
+						</td>
+						<td>
+							Williamson-Hills
+						</td>
+						<td>
+							11/23/2016
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							162
+						</td>
+						<td>
+							0024-5851
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Parobé
+						</td>
+						<td>
+							2914 Nevada Drive
+						</td>
+						<td>
+							Myriam Lethbury
+						</td>
+						<td>
+							Weimann, Barrows and Mohr
+						</td>
+						<td>
+							4/10/2018
+						</td>
+						<td>
+							6
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							78
+						</td>
+						<td>
+							64536-5471
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Jaboticabal
+						</td>
+						<td>
+							599 Hagan Road
+						</td>
+						<td>
+							Tammy Baskett
+						</td>
+						<td>
+							Ward LLC
+						</td>
+						<td>
+							6/19/2016
+						</td>
+						<td>
+							4
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							41
+						</td>
+						<td>
+							0187-2201
+						</td>
+						<td>
+							Brazil
+						</td>
+						<td>
+							Rio das Ostras
+						</td>
+						<td>
+							5722 Buhler Place
+						</td>
+						<td>
+							Shaw Puvia
+						</td>
+						<td>
+							Veum LLC
+						</td>
+						<td>
+							6/10/2017
+						</td>
+						<td>
+							3
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							253
+						</td>
+						<td>
+							36987-2397
+						</td>
+						<td>
+							Canada
+						</td>
+						<td>
+							Beaverlodge
+						</td>
+						<td>
+							63 Randy Circle
+						</td>
+						<td>
+							Evonne Padula
+						</td>
+						<td>
+							Becker-Fritsch
+						</td>
+						<td>
+							4/3/2018
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							333
+						</td>
+						<td>
+							0378-6988
+						</td>
+						<td>
+							Canada
+						</td>
+						<td>
+							Delaware
+						</td>
+						<td>
+							557 Iowa Park
+						</td>
+						<td>
+							Arnoldo Hadden
+						</td>
+						<td>
+							Hyatt-Purdy
+						</td>
+						<td>
+							7/30/2017
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							207
+						</td>
+						<td>
+							51824-004
+						</td>
+						<td>
+							Canada
+						</td>
+						<td>
+							Walnut Grove
+						</td>
+						<td>
+							3952 Monument Place
+						</td>
+						<td>
+							Renaldo Leband
+						</td>
+						<td>
+							Yost-Hermiston
+						</td>
+						<td>
+							6/10/2016
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							117
+						</td>
+						<td>
+							36987-1467
+						</td>
+						<td>
+							Cape Verde
+						</td>
+						<td>
+							Tarrafal de São Nicolau
+						</td>
+						<td>
+							97 Hansons Court
+						</td>
+						<td>
+							Margeaux Tenney
+						</td>
+						<td>
+							Gislason-Ondricka
+						</td>
+						<td>
+							2/28/2017
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							225
+						</td>
+						<td>
+							60760-167
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Changxing
+						</td>
+						<td>
+							1 Northwestern Park
+						</td>
+						<td>
+							Lorianna Wauchope
+						</td>
+						<td>
+							Dickens Group
+						</td>
+						<td>
+							9/13/2017
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							67
+						</td>
+						<td>
+							0378-2537
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Xinpo
+						</td>
+						<td>
+							875 Coleman Street
+						</td>
+						<td>
+							Consalve Jordin
+						</td>
+						<td>
+							Crona Group
+						</td>
+						<td>
+							4/25/2017
+						</td>
+						<td>
+							6
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							102
+						</td>
+						<td>
+							49701-3000
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Longwu
+						</td>
+						<td>
+							55 Lake View Point
+						</td>
+						<td>
+							Valentin Brosch
+						</td>
+						<td>
+							Hahn-VonRueden
+						</td>
+						<td>
+							5/10/2016
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							159
+						</td>
+						<td>
+							54505-328
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Raofeng
+						</td>
+						<td>
+							4 Continental Place
+						</td>
+						<td>
+							Bordy Paley
+						</td>
+						<td>
+							Quitzon, Morissette and Feil
+						</td>
+						<td>
+							11/5/2016
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							246
+						</td>
+						<td>
+							0074-3010
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Shijing
+						</td>
+						<td>
+							55 Little Fleur Road
+						</td>
+						<td>
+							Cheri Capelin
+						</td>
+						<td>
+							Steuber, Funk and Mann
+						</td>
+						<td>
+							2/24/2016
+						</td>
+						<td>
+							4
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							13
+						</td>
+						<td>
+							21130-678
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Qiaole
+						</td>
+						<td>
+							328 Glendale Hill
+						</td>
+						<td>
+							Myrna Orhtmann
+						</td>
+						<td>
+							Miller-Schiller
+						</td>
+						<td>
+							6/7/2016
+						</td>
+						<td>
+							3
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							235
+						</td>
+						<td>
+							50051-0017
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Jitian
+						</td>
+						<td>
+							916 Gale Park
+						</td>
+						<td>
+							Austina Breheny
+						</td>
+						<td>
+							Bode, Pacocha and Bednar
+						</td>
+						<td>
+							3/16/2016
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							205
+						</td>
+						<td>
+							55154-6922
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Hainan
+						</td>
+						<td>
+							3 Rigney Drive
+						</td>
+						<td>
+							Diann Engall
+						</td>
+						<td>
+							Leannon-Hodkiewicz
+						</td>
+						<td>
+							2/6/2017
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							314
+						</td>
+						<td>
+							66184-420
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Xinwan
+						</td>
+						<td>
+							7487 Oak Valley Circle
+						</td>
+						<td>
+							Modestine Durran
+						</td>
+						<td>
+							Satterfield LLC
+						</td>
+						<td>
+							10/26/2016
+						</td>
+						<td>
+							3
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							319
+						</td>
+						<td>
+							21130-330
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Mayong
+						</td>
+						<td>
+							8553 Eastlawn Pass
+						</td>
+						<td>
+							Dalis Merry
+						</td>
+						<td>
+							Bogisich-Wehner
+						</td>
+						<td>
+							11/13/2017
+						</td>
+						<td>
+							4
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							7
+						</td>
+						<td>
+							43857-0331
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Baiguo
+						</td>
+						<td>
+							56482 Fairfield Terrace
+						</td>
+						<td>
+							Englebert Shelley
+						</td>
+						<td>
+							Jenkins Inc
+						</td>
+						<td>
+							6/28/2016
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							6
+						</td>
+						<td>
+							64117-168
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Rongkou
+						</td>
+						<td>
+							023 South Way
+						</td>
+						<td>
+							Gerhard Reinhard
+						</td>
+						<td>
+							Gleason, Kub and Marquardt
+						</td>
+						<td>
+							11/26/2016
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							12
+						</td>
+						<td>
+							0185-0130
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Jiamachi
+						</td>
+						<td>
+							23 Walton Pass
+						</td>
+						<td>
+							Norri Foldes
+						</td>
+						<td>
+							Strosin, Nitzsche and Wisozk
+						</td>
+						<td>
+							4/2/2017
+						</td>
+						<td>
+							3
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							297
+						</td>
+						<td>
+							37205-328
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Zaoshi
+						</td>
+						<td>
+							5517 Surrey Junction
+						</td>
+						<td>
+							Tomasina Goodsall
+						</td>
+						<td>
+							Price-Schumm
+						</td>
+						<td>
+							4/14/2016
+						</td>
+						<td>
+							6
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							311
+						</td>
+						<td>
+							0074-3282
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Luodian
+						</td>
+						<td>
+							9188 Dakota Hill
+						</td>
+						<td>
+							Roana Compford
+						</td>
+						<td>
+							Dooley, Zulauf and Larkin
+						</td>
+						<td>
+							2/7/2016
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							138
+						</td>
+						<td>
+							58232-9910
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Gaoleshan
+						</td>
+						<td>
+							81 Goodland Center
+						</td>
+						<td>
+							Shirline Houseley
+						</td>
+						<td>
+							Bode, Dach and Will
+						</td>
+						<td>
+							1/14/2016
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							211
+						</td>
+						<td>
+							60432-455
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Shangcai Zhongxing
+						</td>
+						<td>
+							97556 Ridgeview Trail
+						</td>
+						<td>
+							Shurlock McPhail
+						</td>
+						<td>
+							Kunde-Braun
+						</td>
+						<td>
+							11/12/2017
+						</td>
+						<td>
+							3
+						</td>
+						<td>
+							3
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							243
+						</td>
+						<td>
+							63323-265
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Shuanggang
+						</td>
+						<td>
+							952 Waubesa Parkway
+						</td>
+						<td>
+							Berky Ferraresi
+						</td>
+						<td>
+							Wunsch, Hoppe and Ebert
+						</td>
+						<td>
+							1/13/2017
+						</td>
+						<td>
+							4
+						</td>
+						<td>
+							2
+						</td>
+						<td nowrap></td>
+					</tr>
+					<tr>
+						<td>
+							50
+						</td>
+						<td>
+							36987-3093
+						</td>
+						<td>
+							China
+						</td>
+						<td>
+							Jiantou
+						</td>
+						<td>
+							373 Northwestern Plaza
+						</td>
+						<td>
+							Bliss Tummasutti
+						</td>
+						<td>
+							Legros-Cummings
+						</td>
+						<td>
+							11/27/2017
+						</td>
+						<td>
+							5
+						</td>
+						<td>
+							1
+						</td>
+						<td nowrap></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>
+							RecordID
+						</th>
+						<th>
+							OrderID
+						</th>
+						<th>
+							Country
+						</th>
+						<th>
+							ShipCity
+						</th>
+						<th>
+							ShipAddress
+						</th>
+						<th>
+							CompanyAgent
+						</th>
+						<th>
+							CompanyName
+						</th>
+						<th>
+							ShipDate
+						</th>
+						<th>
+							Status
+						</th>
+						<th>
+							Type
+						</th>
+						<th>
+							Actions
+						</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+	<!-- END EXAMPLE TABLE PORTLET-->
+</div>

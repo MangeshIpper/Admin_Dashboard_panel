@@ -1,0 +1,531 @@
+<div class="row back">
+        <div class="overlay"></div>
+        <div class="maindiv">
+                <div class="row">
+                        <div class="col-md-5">
+                            <div class="project_wise_nm">
+                                <h4 class="project_nm">Reports</h4>    
+                            </div>
+                        </div>
+                </div>
+
+                <div class="table_card">
+                        <div class="card card-body">
+        
+                            <div class="table-wrapper-2">
+                                <table class="table">
+                                    <thead class="table_head">
+                                      <tr role="row" class="main_header tabs">
+                                        <th colspan="1" rowspan="1" class="header_row"><a class="inventory_class tab-link current active" data-tab="tab-1" href="#" id="link1">Inventory</a></th>
+                                        <th colspan="7" rowspan="1" class="header_row"><a href="#" class="summary_class tab-link" data-tab="tab-2" id="link2">Summary</a> 
+                                            <span class="parking_nm"><a class="parking_class tab-link" href="#" data-tab="tab-3" id="link3">Parking Details</a></span>
+                                        </th>
+                                        
+                                        <th class="header_row build_btn">
+                                                
+                                            <div class="dropdown show building">
+                                                <a class="dropdown-toggle building_cls" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Building
+                                                </a>
+                                            
+                                                <div class="dropdown-menu dropdown-menu-right dropbox_checks" aria-labelledby="dropdownMenuLink">
+                                                    <form class="form_container" role="form">
+                                                        <div class="form-group">                                                                    
+                                                            <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="check" (click)="nilcheck()" > {{sitevisites.building1.name}}
+                                                                <!-- id="checkAll" -->
+                                                            </label>
+                                                            </div>
+                                                                        
+                                                            <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="check" (click)="anantwarclick()"> {{sitevisites.building2.name}}
+                                                            </label>
+                                                            </div>
+
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" class="check"> {{sitevisites.building3.name}}
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" class="check"> {{sitevisites.building4.name}}
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" class="check"> {{sitevisites.building5.name}}
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" class="check"> {{sitevisites.building6.name}}
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" class="check"> {{sitevisites.building7.name}}
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" class="check"> {{sitevisites.building8.name}}
+                                                                </label>
+                                                            </div>   
+                                                            
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" class="check"> {{sitevisites.building9.name}}
+                                                                </label>
+                                                            </div>
+
+                                                        </div>    
+                                                    </form> 
+                                                  </div>
+                                            </div>
+                                        </th>
+                                            <th class="header_row">
+                                                    <div class="dropdown show wings">
+                                                        <a class="dropdown-toggle wing_cls" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            Wing
+                                                        </a>
+                                                    
+                                                        <div class="dropdown-menu dropdown-menu-right dropbox_checks" aria-labelledby="dropdownMenuLink">
+                                                            <a class="dropdown-item" href="#">{{sitevisites.wings1.name}}</a>
+                                                        </div>
+                                                    </div>
+                                            </th>
+                                        </tr>   
+                                           
+                                    </thead>
+
+                                    <div class="mail_div1" id="div1">
+                                     <tbody class="table_body_cls tab-content current " href="#inventory-id" id="tab-1"> 
+                                        <tr class="subheader_cls">
+                                            <th class="floor_cls">{{sitevisites.inventory.floor}}</th>
+                                            <th class="unit_cls">{{sitevisites.inventory.unit}}</th>   
+                                        </tr>
+                                        <tr class="abc">
+                                            <th class="floor_cls top_cls1">{{sitevisites.floor1.name}}</th>
+                                            <td class="column_cls"><button  id="buttontoggle10" class="booked_available1">{{sitevisites.floor1.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor1.rw2}}</button></td>
+                                            <td class="column_cls"><button  class="booked_available1">{{sitevisites.floor1.rw3}}</button></td>
+                                            <td class="column_cls"><button  class="booked_available1">{{sitevisites.floor1.rw4}}</button></td>
+                                            <td class="column_cls"><button  class="booked_available1">{{sitevisites.floor1.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor1.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor1.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor1.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor1.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor2.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor2.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor2.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor2.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor2.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor2.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor2.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor2.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor2.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor2.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor3.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor3.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor3.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor3.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor3.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor3.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor3.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor3.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor3.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor3.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor4.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor4.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor4.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor4.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor4.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor4.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor4.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor4.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor4.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor4.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor5.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor5.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor5.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor5.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor5.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor5.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor5.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor5.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor5.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor5.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor6.name}}</th>
+                                            <td class="column_cls"><button  class="booked_available1">{{sitevisites.floor6.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor6.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor6.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor6.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor6.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor6.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor6.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor6.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor6.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor7.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor7.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor7.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor7.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor7.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor7.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor7.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor7.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor7.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor7.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor8.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor8.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor8.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor8.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor8.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor8.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor8.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor8.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor8.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor8.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor9.name}}</th>
+                                            <td class="column_cls"><button  class="booked_available1">{{sitevisites.floor9.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor9.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor9.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor9.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor9.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor9.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor9.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor9.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor9.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor10.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor10.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor10.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor10.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor10.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor10.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor10.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor10.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor10.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor10.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor11.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor11.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor11.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor11.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor11.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor11.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor11.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor11.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor11.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor11.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor12.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor12.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1"> {{sitevisites.floor12.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor12.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor12.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor12.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor12.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor12.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor12.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor12.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor13.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor13.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor13.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor13.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor13.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor13.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor13.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor13.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor13.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor13.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor14.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor14.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor14.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor14.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor14.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor14.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor14.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor14.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor14.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor14.rw9}}</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="floor_cls">{{sitevisites.floor15.name}}</th>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor15.rw1}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor15.rw2}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor15.rw3}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor15.rw4}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor15.rw5}}</button></td>
+                                            <td class="column_cls"><button class="booked_notavailable1">{{sitevisites.floor15.rw6}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor15.rw7}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor15.rw8}}</button></td>
+                                            <td class="column_cls"><button class="booked_available1">{{sitevisites.floor15.rw9}}</button></td>
+                                        </tr>                                      
+                                        
+                                        <div class="right_box_sticky">
+                                            <div class="indicators">
+                                                <ul class="unorder_list_1">
+                                                    <li><div class="available"></div> {{sitevisites.information1.name}} <b>{{sitevisites.information1.no}}</b> </li>
+                                                    <li><div class="booked"></div> {{sitevisites.information2.name}} <b>{{sitevisites.information2.no}}</b> </li>
+                                                    <li><div class="booked_investor"></div> {{sitevisites.information3.name}} <b>{{sitevisites.information3.no}}</b></li>
+                                                    <li><div class="booked_available"></div>  {{sitevisites.information4.name}} <b>{{sitevisites.information4.no}}</b></li>
+                                                    <li><div class="lease"></div> {{sitevisites.information5.name}} <b>{{sitevisites.information5.no}}</b></li>
+                                                    <li><div class="not_sale"></div> {{sitevisites.information6.name}} <b>{{sitevisites.information6.no}}</b></li>
+                                                    <li><div class="refuge"></div>  {{sitevisites.information7.name}}. <b>{{sitevisites.information7.no}}</b></li>                      
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </tbody> 
+
+                                 </div>   
+
+                             <div class="main_div2" id="div2">
+                                 <tbody class="summary_cls tab-content" href="summary-id" id="tab-2" >
+                                        <tr class="export_row">
+                                            <div class="export_button">
+                                                <button  type="button" class="btn m-btn--pill btn-secondary btn-sm export_btn" id="exportbtn" >
+                                                    EXPORT
+                                                </button>
+                                            </div> 
+                                        </tr>    
+                                        <tr class="subhdr_row">
+                                            <th class="hdr_info">Project</th>
+                                            <th class="hdr_info">Building</th>
+                                            <th class="hdr_info">Total Flats</th>
+                                            <th class="hdr_info">Available Units</th>
+                                            <th class="hdr_info">Sold Units</th>
+                                            <th class="hdr_info_last">Booked (Investor) units</th>
+                                        </tr>    
+                                        <tr class="content_tbl1">
+                                            <td class="col_info1">Nell-Nirmal</td>
+                                            <td class="col_info1">Phase 2</td>
+                                            <td class="col_info1 space1"> No.   T.Area(Sq.Ft.)</td>
+                                            <td class="col_info1 space1">No.   T.Area(Sq.Ft.)</td>
+                                            <td class="col_info1 space1">No.   T.Area(Sq.Ft.)</td>
+                                            <td class="col_info1_last space1">No.   T.Area(Sq.Ft.)</td>
+                                        </tr>
+                                        <tr class="content_tbl2">
+                                            <td class="col_info2"> </td>
+                                            <td class="col_info2"> </td>
+                                            <td class="col_info2 space1">28 9800</td>
+                                            <td class="col_info2 space1">27          9750</td>
+                                            <td class="col_info2 space1">1   359</td>
+                                            <td class="col_info2_last space1">0   0</td>
+                                        </tr>
+                                    </tbody> 
+                            </div>    
+
+                            <div class="main_div3" id="div3">
+                                <tr>
+                                        parking details
+                                </tr>
+                            </div>
+                           
+
+
+
+
+
+
+                                </table>
+                            </div>
+                        </div>
+                </div> 
+
+        </div>
+
+        <div id="sidebar-wrapper10">
+            <div class="overlay1"></div>
+            <div class="flat_details">
+                <div class="flat_name">
+                    <h5 class="flat_cls">FLAT DETAILS</h5>
+                </div>
+                <div class="sidebar-nav">
+                    <span id="menu-close_10"><i class="la la-close filter_icon1"></i></span> 
+                </div>
+            </div>
+            
+            <div class="detail_box">
+                <div class="flat_box1">
+                    <div class="name_flat1">
+                        <h6>Flat No</h6>
+                    </div>
+                    <div class="flat_nos1">
+                        <h6><b>11</b></h6>
+                    </div>
+                </div>
+
+                <div class="flat_box2">
+                    <div class="name_flat2">
+                        <h6>Project/Phase</h6>
+                    </div>
+                    <div class="flat_nos2">
+                        <h6><b>Nell-Nirmal</b></h6>
+                    </div>
+                </div>
+
+                <div class="flat_box1">
+                    <div class="name_flat1">
+                        <h6>Building Name</h6>
+                    </div>
+                    <div class="flat_nos1">
+                        <h6><b>Phase 2</b></h6>
+                    </div>
+                </div>
+
+                <div class="flat_box2">
+                    <div class="name_flat2">
+                        <h6>Flat Type</h6>
+                    </div>
+                    <div class="flat_nos2">
+                        <h6><b>1 BHK</b></h6>
+                    </div>
+                </div>
+
+                <div class="flat_box1">
+                    <div class="name_flat1">
+                        <h6>Current Sq Feet Rate</h6>
+                    </div>
+                    <div class="flat_nos1">
+                        <h6><b>1200.00</b></h6>
+                    </div>
+                </div>
+
+                <div class="flat_box2">
+                    <div class="name_flat2">
+                        <h6>Floor Rise</h6>
+                    </div>
+                    <div class="flat_nos2">
+                        <h6><b>0.00</b></h6>
+                    </div>
+                </div>
+
+                <div class="flat_box1">
+                    <div class="name_flat1">
+                        <h6>Development Charges</h6>
+                    </div>
+                    <div class="flat_nos1">
+                        <h6><b>5250000.00</b></h6>
+                    </div>
+                </div>
+
+                <div class="flat_box2">
+                    <div class="name_flat2">
+                        <h6>Club Membership Charges</h6>
+                    </div>
+                    <div class="flat_nos2">
+                        <h6><b>175000</b></h6>
+                    </div>
+                </div>
+
+                <div class="flat_box1">
+                    <div class="name_flat1">
+                        <h6>PLC</h6>
+                    </div>
+                    <div class="flat_nos1">
+                        <h6><b>250000.00</b></h6>
+                    </div>
+                </div>
+
+                <div class="flat_box2">
+                    <div class="name_flat2">
+                        <h6>Advance Maintenance</h6>
+                    </div>
+                    <div class="flat_nos2">
+                        <h6><b>350000</b></h6>
+                    </div>
+                </div>
+
+                <div class="flat_box1">
+                    <div class="name_flat1">
+                        <h6>Total Cost</h6>
+                    </div>
+                    <div class="flat_nos1">
+                        <h6><b>1022000.00</b></h6>
+                    </div>
+                </div>
+            </div>
+          
+          <div class="button_cls">
+            <div class="print_button">
+                <button  type="button" class="btn m-btn--pill btn-secondary btn-sm print_btn" id="printbtn" >
+                        PRINT
+                </button>
+            </div> 
+
+            <div class="mail_button">
+                <button  type="button" class="btn m-btn--pill btn-secondary btn-sm mail_btn" id="mailbtn" >
+                        MAIL
+                </button>
+            </div>
+        </div>    
+            
+        </div>  
+
+        <div id="sidebar-wrapper11">
+            <div class="flat_details">
+                <div class="flat_name">
+                    <h5 class="flat_cls">Send Flat Details</h5>
+                </div>
+                <div class="sidebar-nav">
+                    <span id="menu-close_11"><i class="la la-close filter_icon1"></i></span> 
+                </div>
+            </div>
+            
+            <div class="inputbox1">
+                <input type="text" placeholder="Email Address" class="email_cls">
+            </div>
+
+            <div class="submit_button">
+                <button  type="button" class="btn m-btn--pill btn-secondary btn-sm mail_btn"  >
+                        Submit
+                </button>
+            </div>
+
+
+        </div>    
+</div>                        
+
+
+
+
+
+
+
+
+
+
+
+

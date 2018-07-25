@@ -1,0 +1,142 @@
+<div class="row back">
+    <div class="main_div">
+       <div class="mat_body">
+				
+					<mat-vertical-stepper [linear]="isLinear" #stepper>
+						<mat-step [stepControl]="firstFormGroup">
+								<form [formGroup]="firstFormGroup">
+								<ng-template matStepLabel>Customer Information</ng-template>
+								<mat-form-field>
+									<input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+								</mat-form-field>
+								<div>
+									<button mat-button matStepperNext>Next</button>
+								</div>
+								</form>
+						</mat-step>
+						<mat-step [stepControl]="secondFormGroup">
+							<form [formGroup]="secondFormGroup">
+							<ng-template matStepLabel>Specific Project Requirements</ng-template>
+							<mat-form-field>
+								<input matInput placeholder="Address" formControlName="secondCtrl" required>
+							</mat-form-field>
+							<div>
+								<button mat-button matStepperPrevious>Back</button>
+								<button mat-button matStepperNext>Next</button>
+							</div>
+							</form>
+						</mat-step>
+						<mat-step [stepControl]="thirdFormGroup">
+							<form [formGroup]="thirdFormGroup">
+							<ng-template matStepLabel>Specific Requirements</ng-template>
+							<mat-form-field>
+								<input matInput placeholder="Address" formControlName="thirdCtrl" required>
+							</mat-form-field>
+							<div>
+								<button mat-button matStepperPrevious>Back</button>
+								<button mat-button matStepperNext>Next</button>
+							</div>
+							</form>
+						</mat-step>
+						<mat-step [stepControl]="fourthFormGroup">
+							<form [formGroup]="fourthFormGroup">
+							<ng-template matStepLabel>Remark & Priority Status</ng-template>
+							<mat-form-field>
+								<input matInput placeholder="Address" formControlName="fourthCtrl" required>
+							</mat-form-field>
+							<div>
+								<button mat-button matStepperPrevious>Back</button>
+								<button mat-button matStepperNext>Next</button>
+							</div>
+							</form>
+						</mat-step>
+						<mat-step>
+							<ng-template matStepLabel>Customer Intrest</ng-template>
+							You are now done.
+							<div>
+							<button mat-button matStepperPrevious>Back</button>
+							<button mat-button (click)="stepper.reset()">Reset</button>
+							</div>
+						</mat-step>
+						</mat-vertical-stepper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!-- <div class="head_component_1">
+				<div class="m-timeline-2">
+					<div class="m-timeline-2__items ">
+						<div class="m-timeline-2__item">
+								<div class="m-timeline-2__item-cricle"> 
+									<b class="nos">1</b> 
+								</div>
+							<div class="m-timeline-2__item-text  m--padding-top-5">
+									Customer Information
+							</div>
+						</div>
+						<div class="m-timeline-2__item m--margin-top-30">
+							
+							<div class="m-timeline-2__item-cricle">
+								<b class="nos">2</b> 
+							</div>
+							<div class="m-timeline-2__item-text m-timeline-2__item-text--bold">
+								b
+							</div>
+						</div>
+						<div class="m-timeline-2__item m--margin-top-30">
+						
+							<div class="m-timeline-2__item-cricle">
+								<b class="nos">3</b> 
+							</div>
+							<div class="m-timeline-2__item-text ">
+								c
+							</div>
+						</div>
+						<div class="m-timeline-2__item m--margin-top-30">
+							
+							<div class="m-timeline-2__item-cricle">
+									<b class="nos">4</b> 
+							</div>
+							<div class="m-timeline-2__item-text">
+								D
+							</div>
+						</div>
+						<div class="m-timeline-2__item m--margin-top-30">
+							
+							<div class="m-timeline-2__item-cricle">
+									<b class="nos">5</b>
+							</div>
+							<div class="m-timeline-2__item-text">
+								  E
+							</div>
+						</div>
+
+						</div>
+					</div> 
+						
+					
+                </div> -->
+       </div>
+    </div>
+</div>

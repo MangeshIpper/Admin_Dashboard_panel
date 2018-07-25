@@ -1,0 +1,764 @@
+<div class="row back">
+    
+        <div class="maindiv">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="project_wise_nm">
+                        <h4 class="project_nm">{{sitevisites.project_wise.name}}</h4>
+                        <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-" id="m_quicksearch" m-quicksearch-mode="default">
+					
+                            <form class="m-header-search__form">
+                                <div class="m-header-search__wrapper">
+                                    <span class="m-header-search__icon-search" id="m_quicksearch_search">
+                                            <i class="fa fa-search"></i>
+                                    </span>
+                                    <span class="m-header-search__input-wrapper">
+                                        <input autocomplete="off" type="search" class="m-header-search__input" id="myInput" name="q" placeholder="Search..." value="" type="text">
+                                    </span>
+                                    <span class="m-header-search__icon-close" id="m_quicksearch_close" style="visibility: visible;">
+                                        <i class="la la-remove"></i>
+                                    </span>
+                                    <span class="m-header-search__icon-cancel" id="m_quicksearch_cancel" style="visibility: hidden;">
+                                        <i class="la la-remove"></i>
+                                    </span>
+                                </div>
+                            </form>
+                                  
+                            <div class="m-dropdown__wrapper" style="z-index: 101;">
+                                <div class="m-dropdown__arrow m-dropdown__arrow--center"></div>
+                                <div class="m-dropdown__inner">
+                                    <div class="m-dropdown__body">
+                                        <div class="m-dropdown__scrollable m-scrollable mCustomScrollbar _mCS_19 mCS-autoHide mCS_no_scrollbar" data-max-height="300" data-mobile-max-height="200" data-scrollable="true" style="max-height: 300px; height: 300px; position: relative; overflow: visible;"><div id="mCSB_19" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: 300px;" tabindex="0"><div id="mCSB_19_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                            <div class="m-dropdown__content m-list-search m-list-search--skin-light"></div>
+                                        </div></div><div id="mCSB_19_scrollbar_vertical" class="mCSB_scrollTools mCSB_19_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_19_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="Lead_summary">
+                        <div class="toggler_btn">
+                            <h4 class="leadnm">{{sitevisites.lead_summary.name}}</h4>
+                            <label class="switch">
+                                <input type="checkbox" ><span class="slider round"></span>
+                            </label>
+                            <h4 class="walkin_and_calls">{{sitevisites.call_summary.name}}</h4>
+                        </div>
+                        <div class="filter_pill" ng-sidebar-content>
+                            <button id="menu-toggle" type="button" class="btn m-btn--pill btn-secondary btn-sm toggle"  >
+                                    FILTER
+                            </button>
+                        </div>
+                    </div>                        
+                </div>
+            </div>   
+            
+
+            <div class="table_card">
+                <div class="card card-body">
+            
+                    <div class="table-wrapper-2">
+                        <table class="table">
+                            <thead class="table_head">
+                                <tr>
+                                    <th>{{sitevisites.table_header_names.name1}}</th>
+                                    <th>{{sitevisites.table_header_names.name2}}</th>
+                                    <th>{{sitevisites.table_header_names.name3}}</th>
+                                    <th>{{sitevisites.table_header_names.name4}}</th>
+                                    <th>{{sitevisites.table_header_names.name5}}</th>
+                                    <th class="border_right">{{sitevisites.table_header_names.name6}}</th>
+                                </tr>
+                            </thead>
+                            <tbody id="myList">
+                                <tr>
+                                    <th scope="row">{{sitevisites.project_names.name1}}</th>
+                                    <td>{{sitevisites.kensington.no1}}</td>
+                                    <td>{{sitevisites.kensington.no2}}</td>
+                                    <td>{{sitevisites.kensington.no3}}</td>
+                                    <td>{{sitevisites.kensington.no4}}</td>
+                                    <td>{{sitevisites.kensington.no5}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{sitevisites.project_names.name2}}</th>
+                                    <td>{{sitevisites.lincoln.no1}}</td>
+                                    <td>{{sitevisites.lincoln.no2}}</td>
+                                    <td>{{sitevisites.lincoln.no3}}</td>
+                                    <td>{{sitevisites.lincoln.no4}}</td>
+                                    <td>{{sitevisites.lincoln.no5}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{sitevisites.project_names.name3}}</th>
+                                    <td>{{sitevisites.london.no1}}</td>
+                                    <td>{{sitevisites.london.no2}}</td>
+                                    <td>{{sitevisites.london.no3}}</td>
+                                    <td>{{sitevisites.london.no4}}</td>
+                                    <td>{{sitevisites.london.no5}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{sitevisites.project_names.name4}}</th>
+                                    <td>{{sitevisites.madison.no1}}</td>
+                                    <td>{{sitevisites.madison.no2}}</td>
+                                    <td>{{sitevisites.madison.no3}}</td>
+                                    <td>{{sitevisites.madison.no4}}</td>
+                                    <td>{{sitevisites.madison.no5}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{sitevisites.project_names.name5}}</th>
+                                    <td>{{sitevisites.paris.no1}}</td>
+                                    <td>{{sitevisites.paris.no2}}</td>
+                                    <td>{{sitevisites.paris.no3}}</td>
+                                    <td>{{sitevisites.paris.no4}}</td>
+                                    <td>{{sitevisites.paris.no5}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{sitevisites.project_names.name6}}</th>
+                                    <td>{{sitevisites.phonix.no1}}</td>
+                                    <td>{{sitevisites.phonix.no2}}</td>
+                                    <td>{{sitevisites.phonix.no3}}</td>
+                                    <td>{{sitevisites.phonix.no4}}</td>
+                                    <td>{{sitevisites.phonix.no5}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{sitevisites.project_names.name7}}</th>
+                                    <td>{{sitevisites.regina.no1}}</td>
+                                    <td>{{sitevisites.regina.no2}}</td>
+                                    <td>{{sitevisites.regina.no3}}</td>
+                                    <td>{{sitevisites.regina.no4}}</td>
+                                    <td>{{sitevisites.regina.no5}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{sitevisites.project_names.name8}}</th>
+                                    <td>{{sitevisites.mattis.no1}}</td>
+                                    <td>{{sitevisites.mattis.no2}}</td>
+                                    <td>{{sitevisites.mattis.no3}}</td>
+                                    <td>{{sitevisites.mattis.no4}}</td>
+                                    <td>{{sitevisites.mattis.no5}}</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{sitevisites.project_names.name9}}</th>
+                                    <td>{{sitevisites.morris.no1}}</td>
+                                    <td>{{sitevisites.morris.no2}}</td>
+                                    <td>{{sitevisites.morris.no3}}</td>
+                                    <td>{{sitevisites.morris.no4}}</td>
+                                    <td>{{sitevisites.morris.no5}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{sitevisites.project_names.name10}}</th>
+                                    <td>{{sitevisites.john.no1}}</td>
+                                    <td>{{sitevisites.john.no2}}</td>
+                                    <td>{{sitevisites.john.no3}}</td>
+                                    <td>{{sitevisites.john.no4}}</td>
+                                    <td>{{sitevisites.john.no5}}</td>
+                                </tr>
+                            </tbody>
+                        </table> 
+    
+                    </div>
+            
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-md-5">
+                        <div class="project_wise_nm">
+                            <h4 class="project_nm">{{sitevisites.reports.name}}</h4>
+                            <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-" id="m_quicksearch" m-quicksearch-mode="default">
+                        
+                                <form class="m-header-search__form">
+                                    <div class="m-header-search__wrapper">
+                                        <span class="m-header-search__icon-search">
+                                                <i class="fa fa-search"></i>
+                                        </span>
+                                        <span class="m-header-search__input-wrapper">
+                                            <input autocomplete="off" class="m-header-search__input" id="table_list" name="q" placeholder="Search..." value="" type="text">
+                                        </span>
+                                        <span class="m-header-search__icon-close" id="m_quicksearch_close" style="visibility: visible;">
+                                            <i class="la la-remove"></i>
+                                        </span>
+                                        <span class="m-header-search__icon-cancel" id="m_quicksearch_cancel" style="visibility: hidden;">
+                                            <i class="la la-remove"></i>
+                                        </span>
+                                    </div>
+                                </form>
+                                      
+                                <div class="m-dropdown__wrapper" style="z-index: 101;">
+                                    <div class="m-dropdown__arrow m-dropdown__arrow--center"></div>
+                                    <div class="m-dropdown__inner">
+                                        <div class="m-dropdown__body">
+                                            <div class="m-dropdown__scrollable m-scrollable mCustomScrollbar _mCS_19 mCS-autoHide mCS_no_scrollbar" data-max-height="300" data-mobile-max-height="200" data-scrollable="true" style="max-height: 300px; height: 300px; position: relative; overflow: visible;"><div id="mCSB_19" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: 300px;" tabindex="0"><div id="mCSB_19_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                                <div class="m-dropdown__content m-list-search m-list-search--skin-light"></div>
+                                            </div></div><div id="mCSB_19_scrollbar_vertical" class="mCSB_scrollTools mCSB_19_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_19_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="col-md-7">
+                        <div class="Lead_summary">
+                            <div class="filter_pill">
+                                <button id="menu-toggle1" type="button" class="btn m-btn--pill btn-secondary btn-sm" >
+                                        FILTER
+                                </button>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>   
+    
+                <div class="table_card">
+                    <div class="card card-body">
+                
+                        <div class="table-wrapper-2">
+                            <table class="table">
+                                <thead class="table_head  table_box">
+                                    <tr role="row" class="main_header">
+                                        <th  class="table_header_name">{{sitevisites.table2_names.name_1}}</th>
+                                        <th colspan="3" rowspan="1" class="table_header_containt">{{sitevisites.table2_names.name_1}}</th>
+                                        <th colspan="3" rowspan="1" class="table_header_containt">{{sitevisites.table2_names.name_2}}</th>
+                                        <th colspan="3" rowspan="1" class="table_header_containt">{{sitevisites.table2_names.name_3}}</th>
+                                        <th colspan="3" rowspan="1" class="table_header_containt">{{sitevisites.table2_names.name_4}}</th>
+                                        <th colspan="3" rowspan="1" class="table_header_containt">{{sitevisites.table2_names.name_5}}</th>
+                                        <th colspan="3" rowspan="1" class="table_header_containt">{{sitevisites.table2_names.name_6}}</th>
+                                        <th colspan="3" rowspan="1" class="table_header_containt">{{sitevisites.table2_names.name_7}}</th>
+                                        <th colspan="3" rowspan="1" class="table_header_containt">{{sitevisites.table2_names.name_8}}</th>
+                                        <th colspan="3" rowspan="1" class="table_header_containt">{{sitevisites.table2_names.name_9}}</th>
+                                        <th class="border_right table_header_containt" colspan="3" rowspan="1">{{sitevisites.table2_names.name_10}}</th>
+                                    </tr>
+                                    <tr role="row" class="sub_header">
+                                            <th></th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.in1_1}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.site_1}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.book_1}}</th>
+
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.in1_2}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.site_2}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.book_2}}</th>
+
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.in1_3}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.site_3}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.book_3}}</th>
+
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.in1_4}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.site_4}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.book_4}}</th>
+
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.in1_5}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.site_5}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.book_5}}</th>
+
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.in1_6}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.site_6}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.book_6}}</th>
+
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.in1_7}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.site_7}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.book_7}}</th>
+
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.in1_8}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.site_8}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.book_8}}</th>
+
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.in1_9}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.site_9}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.book_9}}</th>
+
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.in1_1}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.site_1}}</th>
+                                            <th rowspan="1" colspan="1">{{sitevisites.sub_headers.book_1}}</th>
+                                    </tr>    
+                                </thead>
+                                <tbody id="table_data">
+                                    <tr role="row">
+                                        <th scope="row" class="table_header_name">{{sitevisites.names.name_1}}</th>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no1}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no2}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no3}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no4}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no5}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no6}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no7}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no8}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no9}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no10}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no11}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no12}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no13}}</td>
+                                        <!-- <td class="table_containt_no">{{sitevisites.kensington_1.no14}}</td> -->
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no15}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no16}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no17}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no18}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no19}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no20}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no21}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no22}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no23}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no27}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.kensington_1.no27}}</td>
+                                        <!-- <td>3</td> -->
+                                    </tr>
+                                    <tr role="row">
+                                        <th scope="row" class="table_header_name">{{sitevisites.names.name_2}}</th>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no1}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no2}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no3}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no4}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no5}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no6}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no7}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no8}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no9}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no10}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no11}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no12}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no13}}</td>
+                                        <!-- <td class="table_containt_no">{{sitevisites.london_1.no14}}</td> -->
+                                        <td class="table_containt_no">{{sitevisites.london_1.no15}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no16}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no17}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no18}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no19}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no20}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no21}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no22}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no23}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no27}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.london_1.no27}}</td>
+                                    </tr>
+                                    <tr role="row">
+                                        <th scope="row" class="table_header_name">{{sitevisites.names.name_3}}</th>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no1}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no2}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no3}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no4}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no5}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no6}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no7}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no8}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no9}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no10}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no11}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no12}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no13}}</td>
+                                        <!-- <td class="table_containt_no">{{sitevisites.lincoln_1.no14}}</td> -->
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no15}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no16}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no17}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no18}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no19}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no20}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no21}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no22}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no23}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no27}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.lincoln_1.no27}}</td>
+                                    </tr>
+                                    <tr role="row">
+                                        <th scope="row" class="table_header_name">{{sitevisites.names.name_4}}</th>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no1}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no2}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no3}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no4}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no5}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no6}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no7}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no8}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no9}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no10}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no11}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no12}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no13}}</td>
+                                        <!-- <td class="table_containt_no">{{sitevisites.madison_1.no14}}</td> -->
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no15}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no16}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no17}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no18}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no19}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no20}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no21}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no22}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no23}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no27}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.madison_1.no27}}</td>
+                                    </tr>
+                                    <tr role="row">
+                                        <th scope="row" class="table_header_name">{{sitevisites.names.name_5}}</th>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no1}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no2}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no3}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no4}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no5}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no6}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no7}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no8}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no9}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no10}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no11}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no12}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no13}}</td>
+                                        <!-- <td class="table_containt_no">{{sitevisites.paris_1.no14}}</td> -->
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no15}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no16}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no17}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no18}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no19}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no20}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no21}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no22}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no23}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no27}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.paris_1.no27}}</td>
+                                    </tr>
+                                    <tr role="row">
+                                        <th scope="row" class="table_header_name">{{sitevisites.names.name_6}}</th>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no1}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no2}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no3}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no4}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no5}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no6}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no7}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no8}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no9}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no10}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no11}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no12}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no13}}</td>
+                                        <!-- <td class="table_containt_no">{{sitevisites.phonix_1.no14}}</td> -->
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no15}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no16}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no17}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no18}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no19}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no20}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no21}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no22}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no23}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no27}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.phonix_1.no27}}</td>
+                                    </tr>
+                                    <tr role="row">
+                                        <th scope="row" class="table_header_name">{{sitevisites.names.name_7}}</th>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no1}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no2}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no3}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no4}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no5}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no6}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no7}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no8}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no9}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no10}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no11}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no12}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no13}}</td>
+                                        <!-- <td class="table_containt_no">{{sitevisites.regina_1.no14}}</td> -->
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no15}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no16}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no17}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no18}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no19}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no20}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no21}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no22}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no23}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no27}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.regina_1.no27}}</td>
+                                    </tr>
+                                    <tr role="row">
+                                        <th scope="row" class="table_header_name">{{sitevisites.names.name_8}}</th>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no1}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no2}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no3}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no4}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no5}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no6}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no7}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no8}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no9}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no10}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no11}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no12}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no13}}</td>
+                                        <!-- <td class="table_containt_no">{{sitevisites.mattis_1.no14}}</td> -->
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no15}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no16}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no17}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no18}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no19}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no20}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no21}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no22}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no23}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no27}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.mattis_1.no27}}</td>
+                                    </tr>
+                                    <tr role="row">
+                                        <th scope="row" class="table_header_name">{{sitevisites.names.name_9}}</th>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no1}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no2}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no3}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no4}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no5}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no6}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no7}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no8}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no9}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no10}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no11}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no12}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no13}}</td>
+                                        <!-- <td class="table_containt_no">{{sitevisites.morris_1.no14}}</td> -->
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no15}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no16}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no17}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no18}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no19}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no20}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no21}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no22}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no23}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no27}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.morris_1.no27}}</td>
+                                        
+                                    </tr>
+                                    <tr role="row">
+                                        <th scope="row" class="table_header_name">{{sitevisites.names.name_10}}</th>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no1}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no2}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no3}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no4}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no5}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no6}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no7}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no8}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no9}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no10}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no11}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no12}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no13}}</td>
+                                        <!-- <td class="table_containt_no">{{sitevisites.john_1.no14}}</td> -->
+                                        <td class="table_containt_no">{{sitevisites.john_1.no15}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no16}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no17}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no18}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no19}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no20}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no21}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no22}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no23}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no27}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no24}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no25}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no26}}</td>
+                                        <td class="table_containt_no">{{sitevisites.john_1.no27}}</td>
+                                        
+                                    </tr>
+                                  
+                                </tbody>
+                            </table> 
+                            
+                
+                        </div>
+                
+                    </div>
+                </div>
+        </div>    
+        
+	<div id="sidebar-wrapper">
+		<div class="sidebar-nav">
+		  <span id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle">
+			<i class="la la-close filter_icon1"></i>
+          </span> 
+        </div>
+        <div class="filter_1">
+            <h4 class="sidebar_filter_header_nm">Filter</h4>
+        </div>
+        <div class="sidebar_name">
+            <h5 class="date_range_nm">Date Range</h5>
+        </div>
+        <div class="datepicker_input">
+            <input class="datepicker_input_box" type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+            <a class="calender_icon">
+                    <i class="flaticon-clock-2"></i>
+            </a>
+        </div>
+        <div class="submit_button">
+            <button  type="button" class="btn m-btn--pill btn-secondary btn-sm submit_btn" >
+                    Submit
+            </button>
+        </div>
+    </div>      
+
+
+    <div id="sidebar-wrapper1">
+         <div class="sidebar-nav1">
+            <span id="menu-close_1" href="#" class="btn btn-default btn-lg pull-right toggle">
+                <i class="la la-close filter_icon1"></i>
+            </span>
+         </div>
+            <div class="filter_1_nm">
+                <h4 class="sidebar_filter_header_nm">Filter</h4>
+            </div>
+            <div class="sidebar_name">  
+                <h5 class="date_Range_box_sidebar">Date Range</h5>
+            </div>
+            <div class="datepicker_input">
+                <input class="datepicker_input_box" type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                <a class="calender_icon">
+                        <i class="flaticon-clock-2"></i>
+                </a>
+            </div>
+                 <div class="sidebar_name">  
+                    <h5 class="date_Range_box_sidebar">Select Projects</h5>
+                </div>
+              <div class="dropdown_bundle">  
+<!--                     
+                    <div class="dropdown dropdown-select1">
+                            <button class="btn btn-default dropdown-toggle project_dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+                                Select Projects
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                                <li WH Kensington>whh</li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WH Lincoln</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WH London</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WH Madison</a></li>
+                            </ul>
+                        </div> -->
+
+
+
+                       <button class="btn btn-default dropdown-toggle project_dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+                                Select Projects
+                        </button> 
+
+                     
+
+                        <div class="one">
+
+                                <form class="form_container" role="form">
+                                    <div class="form-group">
+                                      
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox" class="check" id="checkAll"><b> Select All</b>
+                                          </label>
+                                        </div>
+                                        
+                                       <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox" class="check"> WH Kensington
+                                          </label>
+                                        </div>
+                                          
+                                          
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox" class="check"> WH London
+                                          </label>
+                                        </div>
+                                          
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox" class="check"> WH Lincoln
+                                          </label>
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" class="check"> WH Madison
+                                            </label>
+                                        </div>
+                                    
+                                    </div>    
+                                </form> 
+                        </div>
+              </div>   
+
+                  <div class="button_combo">  
+                    <div class="reset_button">
+                        <button  type="button" class="btn m-btn--pill btn-sm reset_btn" id="clear" >
+                                RESET
+                        </button>
+                    </div>    
+
+                    <div class="submit_button">
+                        <button  type="button" class="btn m-btn--pill  btn-sm submit_btn" >
+                                SUBMIT
+                        </button>
+                    </div>
+                 </div>   
+    </div>      
+      
+
+      
+</div>          
+
+
+

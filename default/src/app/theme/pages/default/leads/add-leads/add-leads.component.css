@@ -1,0 +1,111 @@
+
+.nav.nav-pills, .nav.nav-tabs {
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    border-radius: 10px !important;
+}
+.m-tabs-line .m-tabs__item {
+    margin-right: unset;
+    margin-bottom: -1px;
+}
+.m-tabs-line .m-tabs__item {
+    margin-right: unset;
+    margin-bottom: -1px;
+}
+a.nav-link.m-tabs__link.link_btn2 {
+    padding: 14px 30px 10px 30px;
+}
+a.nav-link.m-tabs__link.link_btn3 {
+    padding: 14px 30px 10px 30px;
+}
+a.nav-link.m-tabs__link.active.link1.active.link_btn1 {
+    padding: 14px 30px 10px 30px;
+}
+
+.nav.nav-pills .nav-item, .nav.nav-tabs .nav-item {
+    margin-left: 0px;
+}
+.m-tabs-line.m-tabs-line--brand a.m-tabs__link.active, .m-tabs-line.m-tabs-line--brand a.m-tabs__link:hover, .m-tabs-line.m-tabs-line--brand.nav.nav-tabs .nav-link.active, .m-tabs-line.m-tabs-line--brand.nav.nav-tabs .nav-link:hover {
+    background-color: #1976D2 !important;
+    color: #FFFFFF !important;
+    border-bottom: unset;
+}
+b.nos {
+    color: white;
+    position: relative;
+    text-align: center;
+    bottom: 14px;
+    right: 2px;
+}
+
+
+
+
+
+
+
+
+.row .back {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: white;
+}
+.main_div {
+    border: 1px solid lightgray;
+    width: 98%;
+    height: 700px;
+    margin-top: 20px;
+    background-color: #F8F8F8;
+}
+
+.m-timeline-2 .m-timeline-2__items .m-timeline-2__item .m-timeline-2__item-cricle {
+    border: .89rem solid #1976D2;
+    z-index: 1;
+    bottom: 0px;
+    top: 0px;
+    left: 2.8rem;
+    position: relative;
+    width: 30px;
+    display: block;
+    background-color: #1976D2;
+    height: 30px;
+    text-align: center;
+}
+.m-timeline-2:before {
+    content: '';
+    position: absolute;
+    left: 4.89rem;
+    width: .214rem;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+}
+.m-timeline-2__items {
+    top: 0px;
+    bottom: 0px;
+}
+.m-timeline-2 .m-timeline-2__items .m-timeline-2__item {
+    display: -webkit-box;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+}
+.m-timeline-2 .m-timeline-2__items .m-timeline-2__item .m-timeline-2__item-text {
+    display: table-cell;
+    vertical-align: top;
+    font-size: 1rem;
+    font-weight: 400;
+    /* padding-bottom: .3rem; */
+    bottom: 0px;
+    padding-left: 5rem;
+}
+
+
+
+
+
+.mat_body {
+    margin-left: 15px;
+}

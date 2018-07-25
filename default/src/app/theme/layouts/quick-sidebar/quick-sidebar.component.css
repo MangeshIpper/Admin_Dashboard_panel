@@ -1,0 +1,106 @@
+.m-quick-sidebar.m-quick-sidebar--tabbed .m-quick-sidebar__close {
+    top: 6px;
+    right: 40px;
+}
+.nav.nav-tabs.m-tabs.m-tabs-line.m-tabs-line--brand.quicksidebartabs {
+    margin-top: 20px;
+}
+
+.nav-item.m-tabs__item.quicksidebarnavlist1 {
+    margin-right: 60px;
+}
+
+/* #mCSB_2_container {
+    top: 30px !important;
+} */
+
+.m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge::before {
+    width: 14px !important;
+    height: 14px !important;
+    position: relative !important;
+    top: 2px !important;
+    background-color: #4985d6;
+}
+
+.m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__text {
+    color: #454545 !important;
+    position: relative !important;
+    left: 20px !important;
+}
+
+.nav.nav-tabs.m-tabs.m-tabs-line.m-tabs-line--brand.quicksidebartabs {
+    margin-top: 20px;
+    margin-left: 0px !important;
+}
+
+.m-list-timeline__items::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 100%;
+    
+    bottom: 0;
+    left: 6px!important;
+}
+#m_quick_sidebar_tabs_logs {
+    margin-top: 30px !important;
+}
+#m_quick_sidebar_tabs_settings {
+    margin-top: 30px !important;
+}
+#m_quick_sidebar_tabs_messenger {
+    margin-top: 30px !important;
+}
+
+.la.la-close {
+    position: relative;
+    top: 15px;
+    font-size: 25px;
+}
+
+
+
+.m-list-timeline .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge::before {
+    background-color: #3192de;
+}
+
+
+
+.m-quick-sidebar {
+    display: block !important;
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: unset !important;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    width: 455px !important;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    right: -465px;
+}
+    .quicksidebartabs .m-tabs-line.m-tabs-line--brand a.m-tabs__link.active,.quicksidebartabs .m-tabs-line.m-tabs-line--brand a.m-tabs__link:hover, .quicksidebartabs .m-tabs-line.m-tabs-line--brand.nav.nav-tabs .nav-link.active,.quicksidebartabs .m-tabs-line.m-tabs-line--brand.nav.nav-tabs .nav-link:hover {
+        color: #4873e9;
+        border-bottom: 2px solid #64a7fb !important;
+    }
+
+    .m-quick-sidebar.m-quick-sidebar--tabbed .m-tabs.m-tabs-line {
+        /* margin: 0 0 30px 0; */
+        margin-left: 0px !important;
+        margin-top: 20px;
+    }  
+    
+
+    a.m-list-timeline__text {
+        font-size: 17px !important;
+    }
+    
+
+
+
+

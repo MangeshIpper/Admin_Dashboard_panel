@@ -1,0 +1,102 @@
+{
+    "site_visit": {
+        "name": "SITE VISIT"
+    },
+    "planned": {
+        "name": "Planned",
+        "number": "345"
+    },
+    "total_visit": {
+        "name": "Total Visit Done",
+        "number": "5,55,555"
+    },
+    "avg_day": {
+        "name": "Avg/Day",
+        "number": "78"
+    },
+    "repeat": {
+        "name": "Repeat",
+        "number": "457"
+    },
+    "inquiries_title": {
+        "name": "INQUIRIES"
+    },
+    "inquiries": {
+        "timelinenm1": "Facebook:55",
+        "timelinenm2": "Twitter:24",
+        "timelinenm3": "Exhibition:142"
+    },
+    "inquiries_block_1": {
+        "name": "Inquiries Handled",
+        "number": "44,56,844"
+    },
+    "inquiries_block_2": {
+        "name": "Fresh Inquiries",
+        "number": "2,456"
+    },
+    "inquiries_block_3": {
+        "name": "Inquiries to Conversation Ratio",
+        "number": "14.89:1"
+    },
+    "inquiries_block_4": {
+        "name": "Lifetime Inquiries",
+        "number": "1869"
+    },
+    "touchpoint": {
+        "name": "Touch Point Created",
+        "number_1": "7,644",
+        "number_2": "9,614"
+    },
+    "touchpoint_red": {
+        "name": "avg/day",
+        "number": "789"
+    },
+    "touchpoint_green": {
+        "name": "avg/day",
+        "number": "4967"
+    },
+    "touchpoint_block_1": {
+        "name": "Prospects",
+        "number": "9,53,000"
+    },
+    "touchpoint_block_2": {
+        "name": "Conversions",
+        "number": "2,36,000"
+    },
+    "touchpoint_block_3": {
+        "name": "AVG Conversion Day",
+        "number": "9,87,563"
+    },
+    "touchpoint_block_4": {
+        "name": "Follow up to Conv. Ratio",
+        "number": "456:67"
+    },
+    "inquiries_canvas_title": {
+        "name": "Inquiries"
+    },
+    "inquiries_canvas_block": {
+        "message_name": "Inquiries",
+        "location_name": "Site Visit"
+    },
+    "performance_title": {
+        "name": "Performance"
+    },
+    "performance_raunak_group": {
+        "name": "Raunak Group",
+        "inquiries_name": "Inquiries",
+        "site_visit_name": "Site visit",
+        "booking_name": "Bookings",
+        "inquiries_number": "24",
+        "site_visit_number": "78",
+        "booking_number": "20"
+    },
+    "performance_unnati_woods": {
+        "name": "Unnati Woods",
+        "inquiries_name": "Inquiries",
+        "site_visit_name": "Site visit",
+        "booking_name": "Bookings",
+        "inquiries_number": "4",
+        "site_visit_number": "87",
+        "booking_number": "43"
+    }
+}

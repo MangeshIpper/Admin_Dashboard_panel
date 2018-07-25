@@ -1,0 +1,20 @@
+
+        {
+            "planned": {
+                    "name": "Planned",
+                    "number": 345  
+                },
+            "total_visit":{
+                    "name":"Total Visite Done",
+                    "number":555555
+                },
+            "avg_day": {
+                    "name":"Avg/Day",
+                    "number":78
+                },
+            "repeat":{
+                    "name":"Repeat",
+                    "number":457
+                }
+         }
+        

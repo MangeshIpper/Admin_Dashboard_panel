@@ -1,0 +1,648 @@
+<div class="container-fluid ">
+	<div class="row">
+			
+		<div class="col-md-9">
+				<div class="m-subheader" appunwraptag="">
+						<div class="d-flex align-items-center">
+							<div class="mr-auto">
+								<h3 class="">
+									FUN FACTS
+								</h3>
+						</div>
+
+						<div class="dropdown">
+							<span class="m-subheader__daterange " id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+									<i class="flaticon-event-calendar-symbol"></i>
+								<span class="m-subheader__daterange-label">
+									<span class="m-subheader__dateanger-title">{{sitevisites.dateday.day}}</span>
+									<span class="m-subheader__daterange-date m--font-brand">{{dateresult | date : "MMM d"}} {{startdate | date : "- MMM d"}}</span>
+								</span>
+								<a href="#" class="dropdown btn btn-sm btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill" >
+									<i class="la la-angle-down"></i>
+								</a>
+							</span>
+								<div class=" dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+										<ul class="fullwidth" href="#">
+											<li data-range-key="Today" class=" dropdown-item" (click)='todayfunction()'> Today</li>
+											<li data-range-key="Yesterday" class="dropdown-item" (click)='yesterdayfunction()'>Yesterday</li>
+											<li data-range-key="Last 7 Days" class="dropdown-item" (click)="lastsevendays()" >Last 7 Days</li>
+											<li data-range-key="Last 30 Days" class="dropdown-item" (click)="lastthirtydays()">Last 30 Days</li>
+											<li data-range-key="This Month" class="dropdown-item"(click)="thismonth()" >This Month</li>
+											<li data-range-key="Last Month" class="dropdown-item"(click)="lastmonth()">Last Month</li>
+											<li data-range-key="Custom Range" class="dropdown-item" (click)="customrange()" formcontroller="abc">Custom Range</li>
+										</ul>
+										<div class="range_inputs">
+											<button class="applyBtn btn btn-sm btn-success" type="button">Apply</button>
+											<button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button>
+									</div>
+								</div>
+
+
+								<!-- <div class="daterangepicker dropdown-menu ltr opensleft" aria-labelledby="dropdownMenuButton1">  
+										<div class="calendar left">
+											<div class="daterangepicker_input">
+												<input class="input-mini form-control active" name="daterangepicker_start" value="" type="text">
+												<i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+												<div class="calendar-time" style="display: none;">
+													<div></div>
+													<i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+												</div>
+											</div>
+												<div class="calendar-table">
+													<table class="table-condensed">
+														<thead>
+															<tr>
+																<th class="prev available">
+																	<i class="fa fa-chevron-left glyphicon glyphicon-chevron-left"></i>
+																</th>
+																<th colspan="5" class="month">Jun 2018</th>
+																<th></th>
+															</tr>
+															<tr>
+																<th>Su</th>
+																<th>Mo</th>
+																<th>Tu</th>
+																<th>We</th>
+																<th>Th</th>
+																<th>Fr</th>
+																<th>Sa</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="weekend off available" data-title="r0c0">27</td>
+																<td class="off available" data-title="r0c1">28</td>
+																<td class="off available" data-title="r0c2">29</td>
+																<td class="off available" data-title="r0c3">30</td>
+																<td class="off available" data-title="r0c4">31</td>
+																<td class="available" data-title="r0c5">1</td>
+																<td class="weekend available" data-title="r0c6">2</td>
+															</tr>
+															<tr>
+																<td class="weekend available" data-title="r1c0">3</td>
+																<td class="available" data-title="r1c1">4</td>
+																<td class="available" data-title="r1c2">5</td>
+																<td class="available" data-title="r1c3">6</td>
+																<td class="available" data-title="r1c4">7</td>
+																<td class="available" data-title="r1c5">8</td>
+																<td class="weekend available" data-title="r1c6">9</td>
+															</tr>
+															<tr>
+																<td class="weekend available" data-title="r2c0">10</td>
+																<td class="available" data-title="r2c1">11</td>
+																<td class="available" data-title="r2c2">12</td>
+																<td class="available" data-title="r2c3">13</td>
+																<td class="available" data-title="r2c4">14</td>
+																<td class="available" data-title="r2c5">15</td>
+																<td class="weekend available" data-title="r2c6">16</td>
+															</tr>
+															<tr>
+																<td class="weekend available" data-title="r3c0">17</td>
+																<td class="available" data-title="r3c1">18</td>
+																<td class="available" data-title="r3c2">19</td>
+																<td class="available" data-title="r3c3">20</td>
+																<td class="today active start-date active end-date available" data-title="r3c4">21</td>
+																<td class="available" data-title="r3c5">22</td>
+																<td class="weekend available" data-title="r3c6">23</td>
+															</tr>
+															<tr>
+																<td class="weekend available" data-title="r4c0">24</td>
+																<td class="available" data-title="r4c1">25</td>
+																<td class="available" data-title="r4c2">26</td>
+																<td class="available" data-title="r4c3">27</td>
+																<td class="available" data-title="r4c4">28</td>
+																<td class="available" data-title="r4c5">29</td>
+																<td class="weekend available" data-title="r4c6">30</td>
+															</tr>
+															<tr>
+																<td class="weekend off available" data-title="r5c0">1</td>
+																<td class="off available" data-title="r5c1">2</td>
+																<td class="off available" data-title="r5c2">3</td>
+																<td class="off available" data-title="r5c3">4</td>
+																<td class="off available" data-title="r5c4">5</td>
+																<td class="off available" data-title="r5c5">6</td>
+																<td class="weekend off available" data-title="r5c6">7</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="calendar right">
+												<div class="daterangepicker_input">
+													<input class="input-mini form-control" name="daterangepicker_end" value="" type="text">
+													<i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+													<div class="calendar-time" style="display: none;">
+														<div></div>
+														<i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+													</div>
+												</div>
+												<div class="calendar-table">
+													<table class="table-condensed">
+														<thead>
+															<tr>
+																<th></th>
+																<th colspan="5" class="month">Jul 2018</th>
+																<th class="next available">
+																	<i class="fa fa-chevron-right glyphicon glyphicon-chevron-right"></i>
+																</th>
+															</tr>
+															<tr>
+																<th>Su</th>
+																<th>Mo</th>
+																<th>Tu</th>
+																<th>We</th>
+																<th>Th</th>
+																<th>Fr</th>
+																<th>Sa</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="weekend off available" data-title="r0c0">24</td>
+																<td class="off available" data-title="r0c1">25</td>
+																<td class="off available" data-title="r0c2">26</td>
+																<td class="off available" data-title="r0c3">27</td>
+																<td class="off available" data-title="r0c4">28</td>
+																<td class="off available" data-title="r0c5">29</td>
+																<td class="weekend off available" data-title="r0c6">30</td>
+															</tr>
+															<tr>
+																<td class="weekend available" data-title="r1c0">1</td>
+																<td class="available" data-title="r1c1">2</td>
+																<td class="available" data-title="r1c2">3</td>
+																<td class="available" data-title="r1c3">4</td>
+																<td class="available" data-title="r1c4">5</td>
+																<td class="available" data-title="r1c5">6</td>
+																<td class="weekend available" data-title="r1c6">7</td>
+															</tr>
+															<tr>
+																<td class="weekend available" data-title="r2c0">8</td>
+																<td class="available" data-title="r2c1">9</td>
+																<td class="available" data-title="r2c2">10</td>
+																<td class="available" data-title="r2c3">11</td>
+																<td class="available" data-title="r2c4">12</td>
+																<td class="available" data-title="r2c5">13</td>
+																<td class="weekend available" data-title="r2c6">14</td>
+															</tr>
+															<tr>
+																<td class="weekend available" data-title="r3c0">15</td>
+																<td class="available" data-title="r3c1">16</td>
+																<td class="available" data-title="r3c2">17</td>
+																<td class="available" data-title="r3c3">18</td>
+																<td class="available" data-title="r3c4">19</td>
+																<td class="available" data-title="r3c5">20</td>
+																<td class="weekend available" data-title="r3c6">21</td>
+															</tr>
+															<tr>
+																<td class="weekend available" data-title="r4c0">22</td>
+																<td class="available" data-title="r4c1">23</td>
+																<td class="available" data-title="r4c2">24</td>
+																<td class="available" data-title="r4c3">25</td>
+																<td class="available" data-title="r4c4">26</td>
+																<td class="available" data-title="r4c5">27</td>
+																<td class="weekend available" data-title="r4c6">28</td>
+															</tr>
+															<tr>
+																<td class="weekend available" data-title="r5c0">29</td>
+																<td class="available" data-title="r5c1">30</td>
+																<td class="available" data-title="r5c2">31</td>
+																<td class="off available" data-title="r5c3">1</td>
+																<td class="off available" data-title="r5c4">2</td>
+																<td class="off available" data-title="r5c5">3</td>
+																<td class="weekend off available" data-title="r5c6">4</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="ranges">
+												<ul href="#">
+													<li data-range-key="Today" class="active dropdown-item" data-ng-href="#" (click)='todayfunction()'>Today</li>
+													<li data-range-key="Yesterday" class="dropdown-item" data-ng-href="#"  (click)='yesterdayfunction()'>Yesterday</li>
+													<li data-range-key="Last 7 Days" class="dropdown-item" data-ng-href="#"  >Last 7 Days</li>
+													<li data-range-key="Last 30 Days" class="dropdown-item" data-ng-href="#" >Last 30 Days</li>
+													<li data-range-key="This Month" class="dropdown-item" data-ng-href="#" >This Month</li>
+													<li data-range-key="Last Month" class="dropdown-item" data-ng-href="#">Last Month</li>
+													<li data-range-key="Custom Range" class="dropdown-item" data-ng-href="#">Custom Range</li>
+												</ul>
+												<div class="range_inputs">
+													<button class="applyBtn btn btn-sm btn-success" type="button">Apply</button>
+													<button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button>
+											  </div>
+										</div>
+									</div> 	 -->
+
+
+						</div>
+
+					</div>
+				</div>
+
+				
+				
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card sitevisite_border">
+						<div class="card-header sitehdr">
+							<h4 class="sitevisithdr">{{sitevisites.site_visit.name}}</h4>
+						</div>
+						<div class="card-body">
+							<div class="col-md-3">
+								<div class="store">
+								<div class="label_nms">
+									<div class="planned_nm">
+										{{sitevisites.planned.name}}
+									</div>	
+									<div class="num1">
+										{{sitevisites.planned.number}}
+									</div>
+								</div>
+								<div class="imgpls1">
+									<div class="image12">
+										<img src="https://cdn4.iconfinder.com/data/icons/111-seo-services-pack/128/new_seo-44-512.png" alt="">
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+							  <div class="store">
+								<div class="label_nms ">
+									<div class="visit_nm">
+											{{sitevisites.total_visit.name}}
+									</div>
+									<div class="num2 ">
+										{{sitevisites.total_visit.number}}
+									</div>
+								</div>
+									<div class="imgpls2">
+										<div class="image12">
+											<img src="https://image.flaticon.com/icons/svg/32/32745.svg" alt="">
+										</div>
+									</div>
+							  </div>	
+							</div>
+							<div class="col-md-3">
+							  <div class="store">	
+								<div class="label_nms">
+									<div class="perday_nm">
+										{{sitevisites.avg_day.name}}
+									</div>
+									
+									<div class="num3">
+										{{sitevisites.avg_day.number}}
+									</div>
+								</div>
+									<div class="imgpls3">
+										<div class="image12">
+											<img src="https://cdn2.iconfinder.com/data/icons/startup-linear-black/614/6334_-_Planned_Idea-512.png" alt="">
+										</div>
+									</div>
+							  </div>		
+							</div>
+							<div class="col-md-3">
+							  <div class="store">	
+								<div class="label_nms">
+									<div class="repeat_nm">
+										{{sitevisites.repeat.name}}
+									</div>
+										<div class="num4">
+											{{sitevisites.repeat.number}}
+										</div>
+									</div>
+									<div class="imgpls4">
+										<div class="image12">
+											<img src="https://i0.wp.com/ajournalofmusicalthings.com/wp-content/uploads/Repeat.png?w=256" alt="">
+										</div>
+									</div>
+							  </div>		
+							</div>
+						</div>
+					</div>		
+				</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 thirdrow">
+				<div class="card">
+					<div class="card-header inquirieshdng">
+						<div class="hdrgrp1">
+							<h4 class="inqhdr">{{sitevisites.inquiries_title.name}}</h4>
+								<div class="btn-group m-btn-group m-btn-group--pill btnicon_no1" role="group" >
+									<button type="button" class="m-demo-icon__preview carousel-control left" href="#demo" data-slide="prev" style="border: none;background: transparent;width: 10px;color: #2c2e3e; cursor: pointer">
+											<i class="la la-angle-left"></i>
+									</button>
+									
+									<button type="button" class="m-demo-icon__preview carousel-control right" href="#demo" data-slide="next"  style="border: none;background: transparent;color: #2c2e3e; cursor: pointer ">
+											<i class="la la-angle-right"></i>
+									</button>
+								</div>
+						</div>		
+					</div>
+					<div class="card-body">
+
+							
+
+									<div id="demo" class="carousel slide" data-ride="carousel">
+									
+										<!-- Carousel indicators -->
+										<ul class="carousel-indicators" >
+											<li data-target="#demo" style="cursor: pointer" data-slide-to="0" class="active"></li>
+											<li data-target="#demo" style="cursor: pointer" data-slide-to="1"></li>
+											<li data-target="#demo" style="cursor: pointer" data-slide-to="2"></li>
+											<li data-target="#demo" style="cursor: pointer" data-slide-to="3"></li>
+										</ul>   
+										<!-- Wrapper for carousel items -->
+										<div class="carousel-inner"> 
+
+										  <div class="carousel-item active">
+
+											 <div class="m-list-timeline m-list-timeline--skin-light">	
+											  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+												<div class="m-list-timeline__items">
+													<div class="m-list-timeline__item">
+														<span class="m-list-timeline__badge m-list-timeline__badge--info"></span>
+														<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm1}}</span>
+													</div>
+													<div class="m-list-timeline__item">
+														<span class="m-list-timeline__badge m-list-timeline__badge--danger"></span>
+														<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm2}}</span>
+													</div>
+													<div class="m-list-timeline__item">
+														<span class="m-list-timeline__badge m-list-timeline__badge--success"></span>
+														<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm3}}</span>
+													</div>
+												</div>		
+											</div>
+										  </div>	
+										 </div>
+										 
+										 <div class="carousel-item">
+											<div class="m-list-timeline m-list-timeline--skin-light">	
+												<div id="myCarousel" class="carousel slide" data-ride="carousel">
+													<div class="m-list-timeline__items">
+														<div class="m-list-timeline__item">
+															<span class="m-list-timeline__badge m-list-timeline__badge--info"></span>
+															<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm1}}</span>
+														</div>
+														<div class="m-list-timeline__item">
+															<span class="m-list-timeline__badge m-list-timeline__badge--danger"></span>
+															<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm2}}</span>
+														</div>
+														<div class="m-list-timeline__item">
+															<span class="m-list-timeline__badge m-list-timeline__badge--success"></span>
+															<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm3}}</span>
+														</div>
+													</div>		
+												</div>
+											</div>	
+										</div>
+										<div class="carousel-item">
+												<div class="m-list-timeline m-list-timeline--skin-light">	
+													<div id="myCarousel" class="carousel slide" data-ride="carousel">
+														<div class="m-list-timeline__items">
+															<div class="m-list-timeline__item">
+																<span class="m-list-timeline__badge m-list-timeline__badge--info"></span>
+																<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm1}}</span>
+															</div>
+															<div class="m-list-timeline__item">
+																<span class="m-list-timeline__badge m-list-timeline__badge--danger"></span>
+																<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm2}}</span>
+															</div>
+															<div class="m-list-timeline__item">
+																<span class="m-list-timeline__badge m-list-timeline__badge--success"></span>
+																<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm3}}</span>
+															</div>
+														</div>		
+													</div>
+												</div>	
+											</div>
+
+											<div class="carousel-item">
+													<div class="m-list-timeline m-list-timeline--skin-light">	
+														<div id="myCarousel" class="carousel slide" data-ride="carousel">
+															<div class="m-list-timeline__items">
+																<div class="m-list-timeline__item">
+																	<span class="m-list-timeline__badge m-list-timeline__badge--info"></span>
+																	<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm1}}</span>
+																</div>
+																<div class="m-list-timeline__item">
+																	<span class="m-list-timeline__badge m-list-timeline__badge--danger"></span>
+																	<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm2}}</span>
+																</div>
+																<div class="m-list-timeline__item">
+																	<span class="m-list-timeline__badge m-list-timeline__badge--success"></span>
+																	<span class="m-list-timeline__text">{{sitevisites.inquiries.timelinenm3}}</span>
+																</div>
+															</div>		
+														</div>
+													</div>	
+												</div>
+
+
+								     </div>	
+							</div>
+						</div>
+					</div>
+				</div>	
+
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-12 rowpadding">
+						<div class="col4_box">
+							<div class="first_box">
+								<div class="first_left">
+									<div class="one_box">
+										<h5 class="heading_first_box">{{sitevisites.inquiries_block_1.name}}</h5>
+										<h1 class="heading_first_box_number">{{sitevisites.inquiries_block_1.number}}</h1>
+									</div>
+								</div>
+								<div class="first_right">
+									<div class="one_box">
+											<h5 class="heading_first_box">{{sitevisites.inquiries_block_2.name}}</h5>
+											<h1 class="heading_first_box_number">{{sitevisites.inquiries_block_2.number}}</h1>
+									</div>
+								</div>
+							</div>
+						<div class="first_box">
+							<div class="first_left_1">
+								<div class="one_box">
+										<h5 class="heading_first_box">{{sitevisites.inquiries_block_3.name}}</h5>
+										<h1 class="heading_first_box_number">{{sitevisites.inquiries_block_3.number}}</h1>
+								</div>
+							</div>
+							<div class="first_right_1">
+								<div class="one_box">
+										<h5 class="heading_first_box">{{sitevisites.inquiries_block_4.name}}</h5>
+										<h1 class="heading_first_box_number">{{sitevisites.inquiries_block_4.number}}</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 left_side">
+				<div class="card card-body tchheadingpanel">
+					<div class="rowgrp1">
+						<div class="labname1">
+							<div class="tchpntnm1">
+								<h3 class="heading_first_box">{{sitevisites.touchpoint.name}}</h3>
+								<h1 class="heading_first_box_number">{{sitevisites.touchpoint.number_1}}</h1>
+							</div>
+							<div class="tchpntnm2">
+								<h1 class="touch_pnt_number">{{sitevisites.touchpoint_red.number}}</h1>
+								<h3 class="touch_pnt_name">{{sitevisites.touchpoint_red.name}}</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card card-body tchheadingpanel">
+					<div class="rowgrp2">
+						<div class="labname2">
+							<div class="tchpntnm3">
+								<h3 class="heading_first_box">{{sitevisites.touchpoint.name}}</h3>
+								<h1 class="heading_first_box_number">{{sitevisites.touchpoint.number_2}}</h1>
+							</div>
+							<div class="tchpntnm4">
+								<h1 class="touch_pnt_number">{{sitevisites.touchpoint_green.number}}</h1>
+								<h3 class="touch_pnt_name">{{sitevisites.touchpoint_green.name}}</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12 rowpadding">
+						<div class="col4_box_1">
+							<div class="first_box_1">
+								<div class="first_left1">
+									<div class="one_box_1">
+										<h1 class="heading_first_box_number_1">{{sitevisites.touchpoint_block_1.number}}</h1>
+										<h5 class="heading_first_box_1">{{sitevisites.touchpoint_block_1.name}}</h5>
+									</div>
+								</div>
+								<div class="first_right1">
+									<div class="one_box_1">
+										<h1 class="heading_first_box_number_1">{{sitevisites.touchpoint_block_2.number}}</h1>
+										<h5 class="heading_first_box_1">{{sitevisites.touchpoint_block_2.name}}</h5>
+									</div>
+								</div>
+							</div>
+						<div class="first_box_1">
+							<div class="first_left_2">
+								<div class="one_box_1">
+									<h1 class="heading_first_box_number_1">{{sitevisites.touchpoint_block_3.number}}</h1>
+									<h5 class="heading_first_box_1">{{sitevisites.touchpoint_block_3.name}}</h5>
+								</div>
+							</div>
+							<div class="first_right_2">
+								<div class="one_box_1">
+									<h1 class="heading_first_box_number_1 hdno">{{sitevisites.touchpoint_block_4.number}}</h1>
+									<h5 class="heading_first_box_1 hdnm">{{sitevisites.touchpoint_block_4.name}}</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	  </div>	
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-header col_inq_hdr">
+					<div class="card_header_name">
+						<h5 class="col_nm_hdr1">{{sitevisites.inquiries_canvas_title.name}}</h5>
+
+						<div class="m-btn-group m-btn-group--pill btn-group m-btn-group m-btn-group--pill btn-group-sm" role="group" aria-label="Small button group">
+							<button type="button" class="btn btn-outline-info col_btn1" id="abc">
+								Monthly
+							</button>
+							<button type="button" class="btn btn-outline-info " id="def">
+								Weekly
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="card-body col_inq_body">
+					<div class="m-scrollable bodycontaint1" data-scrollable="true">			
+						<ul class="inq">
+							<li>
+								<div>
+									<a href="#" class="btn btn-danger m-btn m-btn--icon m-btn--icon-only m-btn--pill m-btn--air inquiries_icons">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+									</a>  <p class="bodynm1">{{sitevisites.inquiries_canvas_block.message_name}}</p> 
+								</div>	
+							</li>
+							<li>
+								<div>
+									<a href="#" class="btn btn-info m-btn m-btn--icon m-btn--icon-only m-btn--pill m-btn--air inquiries_icons">
+										<i class="la la-map-marker"></i>
+									</a>	  <p class="bodynm1">{{sitevisites.inquiries_canvas_block.location_name}}</p>  
+								</div>
+							</li>
+						</ul>				
+					
+						<div class="m-widget21__chart m-portlet-fit--sides" #abc style="height:310px;">
+							<canvas id="m_chart_adwords_stats"></canvas>
+						</div>
+
+						<!-- <div class="m-widget22__chart m-portlet-fit--sides" #def style="height:310px;">
+								<canvas id="m_chart_activities" class="chartjs-render-monitor"></canvas>
+						</div> -->
+
+					</div>
+				</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header col_inq_hdr">
+				<div class="card_header_name">
+						<h5 class="col_nm_hdr1">{{sitevisites.performance_title.name}}</h5>
+					<div class="m-btn-group m-btn-group--pill btn-group m-btn-group m-btn-group--pill btn-group-sm" role="group" aria-label="Small button group">
+						<button type="button" class="btn btn-outline-info col_btn1">
+							Project
+						</button>
+						<button type="button" class="btn btn-outline-info ">
+							Team
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="card-body companys_body">
+				<div class="raunak_width">
+					<div class="company_nm">
+						<h5 class="compny_heads">{{sitevisites.performance_raunak_group.name}}</h5>
+						<ul class="raunakul">
+							<li><h3>{{sitevisites.performance_raunak_group.inquiries_number}}</h3></li>
+							<li class="raunak_nms">{{sitevisites.performance_raunak_group.inquiries_name}}</li>
+							<li><h3>{{sitevisites.performance_raunak_group.site_visit_number}}</h3></li>
+							<li class="raunak_nms">{{sitevisites.performance_raunak_group.site_visit_name}}</li>
+							<li><h3>{{sitevisites.performance_raunak_group.booking_number}}</h3></li>
+							<li class="raunak_nms">{{sitevisites.performance_raunak_group.booking_name}}</li>
+						</ul>
+					</div>
+				</div>
+				<div class="unnati_width">
+					<div class="company_nm">
+						<h5 class="compny_heads">{{sitevisites.performance_unnati_woods.name}}</h5>
+						<ul class="unnatiul"> 
+							<li><h3>{{sitevisites.performance_unnati_woods.inquiries_number}}</h3></li>
+							<li class="raunak_nms">{{sitevisites.performance_unnati_woods.inquiries_name}}</li>
+							<li><h3>{{sitevisites.performance_unnati_woods.site_visit_number}}</h3></li>
+							<li class="raunak_nms">{{sitevisites.performance_unnati_woods.site_visit_name}}</li>
+							<li><h3>{{sitevisites.performance_unnati_woods.booking_number}}</h3></li>
+							<li class="raunak_nms">{{sitevisites.performance_unnati_woods.booking_name}}</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+</div>

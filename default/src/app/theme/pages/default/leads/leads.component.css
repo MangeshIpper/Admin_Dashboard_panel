@@ -1,0 +1,156 @@
+.m-tabs-line.m-tabs-line--brand a.m-tabs__link {
+    color: #272630;
+    border-bottom: unset;
+}
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav.m-menu__item.m-menu__item--open.m-menu__heading .m-menu__link-icon, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav.m-menu__item.m-menu__item--open.m-menu__link .m-menu__link-icon {
+    color: #FEA625 !important;
+}
+@media (min-width: 1025px){
+    .m-aside-left--minimize .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--hover>.m-menu__link>.m-menu__link-icon, .m-aside-left--minimize .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__link>.m-menu__link-icon {
+        color: #FEA625 !important;
+    }
+}
+a.nav-link.m-tabs__link.active.link1.active.link_btn1 {
+    color: #152334 !important;
+}
+a.nav-link.m-tabs__link.link_btn2 {
+    color: #152334 !important;
+}
+a.nav-link.m-tabs__link.link_btn3 {
+    color: #152334 !important;
+}
+
+.row.back {
+    background: white;
+}
+.main_containt {
+    width: 97%;
+    border: 1px solid lightgray;
+    margin-top: 30px;
+    margin-right: 50px;
+    height: 780px;
+    background: #F8F8F8;
+}
+.content_block {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 30px;
+}
+.inquiries {
+    position: relative;
+    padding-top: 20px;
+}
+button#menu-toggles1 {
+    padding: 7px 20px 5px 20px;
+    font-size: 17px;
+    font-family: unset;
+    font-weight: 600;
+    color: #375C8E;
+}
+h6.inq_nm {
+    font-size: 18px;
+    font-family: unset;
+    font-weight: 600;
+}
+
+#sidebar-wrapper_container{
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    background: #FFFFFF;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    box-shadow: -3px 4px 14px lightgrey;
+    top:0;
+  }
+
+
+#sidebar-wrapper_container.active {
+    right: 250px;
+    width: 900px;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+  }
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.overlay_over {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+.nav.nav-pills, .nav.nav-tabs {
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    border-radius: 10px !important;
+}
+.m-tabs-line .m-tabs__item {
+    margin-right: unset;
+    margin-bottom: -1px;
+}
+.m-tabs-line .m-tabs__item {
+    margin-right: unset;
+    margin-bottom: -1px;
+}
+a.nav-link.m-tabs__link.link_btn2 {
+    padding: 14px 30px 10px 30px;
+}
+a.nav-link.m-tabs__link.link_btn3 {
+    padding: 14px 30px 10px 30px;
+}
+a.nav-link.m-tabs__link.active.link1.active.link_btn1 {
+    padding: 14px 30px 10px 30px;
+}
+a.nav-link.m-tabs__link.link1.link_btn1 {
+    padding-left: 30px;
+}
+/* li.nav-item.m-tabs__item.navtab1 {
+    padding: 0px 30px 0px 30px;
+} */
+/* .nav.nav-pills .nav-item, .nav.nav-tabs .nav-item {
+    margin-left: 0px;
+} */
+/* .m-tabs-line.m-tabs-line--brand a.m-tabs__link.active, .m-tabs-line.m-tabs-line--brand a.m-tabs__link:hover, .m-tabs-line.m-tabs-line--brand.nav.nav-tabs .nav-link.active, .m-tabs-line.m-tabs-line--brand.nav.nav-tabs .nav-link:hover {
+    background-color: #1976D2 !important;
+    color: #FFFFFF !important;
+    border-bottom: unset;
+}    */
+.m-tabs-line.m-tabs-line--brand a.m-tabs__link.active, .m-tabs-line.m-tabs-line--brand a.m-tabs__link:hover, .m-tabs-line.m-tabs-line--brand.nav.nav-tabs .nav-link.active, .m-tabs-line.m-tabs-line--brand.nav.nav-tabs .nav-link:hover {
+    color: #272630;
+    border-bottom: unset;
+}

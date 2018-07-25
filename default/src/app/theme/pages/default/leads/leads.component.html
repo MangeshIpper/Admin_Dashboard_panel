@@ -1,0 +1,27 @@
+<div class="m-subheader navtitle sec_menu" appunwraptag="">
+        <div class="overlay_over"></div>
+	<div class="d-flex align-items-center">
+		<div style="width: 100%;" class="navigation_menu">
+
+		<ul id="m_quick_sidebar_tabs" class="nav nav-tabs m-tabs m-tabs-line m-tabs-line--brand navtab_btn1 " role="tablist">
+			<li class="nav-item m-tabs__item navtab1">
+				<a class="nav-link m-tabs__link active link1 active link_btn1" [routerLink]="['lead/add']" data-toggle="tab"   role="tab">
+					<b>ADD LEADS</b>
+				</a>
+			</li>
+			<li class="nav-item m-tabs__item navtab_btn2">
+					<a class="nav-link m-tabs__link link_btn2" 	[routerLink]="['lead/qcall']"	data-toggle="tab" role="tab">
+						<b>QUICK CALL</b>
+					</a>
+			</li>
+			<li class="nav-item m-tabs__item navtab_btn3">
+				<a class="nav-link m-tabs__link link_btn3" data-toggle="tab" [routerLink]="['lead/qlead']"  role="tab">
+					<b> QUICK LEAD</b>
+				</a>
+			</li>
+		  </ul>
+		</div>
+	</div>
+</div>
+<!-- <app-menu></app-menu> -->
+<router-outlet></router-outlet>
