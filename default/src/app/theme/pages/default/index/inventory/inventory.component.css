@@ -512,6 +512,7 @@ button#exportbtn {
     color: white;
     font-size: 17px;
     font-weight: 600;
+    font-family: unset;
 }
 tr.subhdr_row {
     background-color: #F4F4F4;

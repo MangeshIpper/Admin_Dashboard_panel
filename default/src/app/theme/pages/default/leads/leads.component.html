@@ -1,4 +1,4 @@
-<div class="m-subheader navtitle sec_menu" appunwraptag="">
+<!-- <div class="m-subheader navtitle sec_menu" appunwraptag="">
         <div class="overlay_over"></div>
 	<div class="d-flex align-items-center">
 		<div style="width: 100%;" class="navigation_menu">
@@ -22,6 +22,231 @@
 		  </ul>
 		</div>
 	</div>
-</div>
-<!-- <app-menu></app-menu> -->
+</div> -->
+<div class="overlay_qlead"></div>
+<nav mat-tab-nav-bar>
+	<a mat-tab-link class="nav-link m-tabs__link link_btn1" [routerLink]="['add']" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">  ADD LEADS</a>
+	<a mat-tab-link class="nav-link m-tabs__link link_btn2" (click)="openDialog()" >  QUICK CALL</a>
+	<a mat-tab-link class="nav-link m-tabs__link link_btn3"  id="quick_lead">  QUICK LEAD</a>
+  </nav>
+
+<!-- [routerLink]="['lead/qcall']" routerLinkActive #rla2="routerLinkActive" [active]="rla2.isActive" -->
+<!-- [routerLink]="['lead/qlead']" routerLinkActive #rla3="routerLinkActive" [active]="rla3.isActive" -->
+
+
+
 <router-outlet></router-outlet>
+<app-menu></app-menu>
+
+
+
+
+<div id="sidebar-wrapper_container_qleads">
+	<div class="flat_details">
+		<div class="flat_name">
+			<h5 class="flat_cls">Quick Lead</h5>
+		</div>
+		<div class="sidebar-nav">
+			<span class="closebtnicon" id="menuclose_qleads">
+			<i class="la la-close filter_icon1" ></i>
+		</span>
+		</div>
+	</div>
+
+	<form action="">
+		<!-- <div class="search_box1"> -->
+			<mat-grid-list cols="1" rowHeight="100px" class="material_grid_box">
+				<mat-grid-tile>
+					<mat-form-field class="example-full-width_search">
+							<input type=text matInput  placeholder="Search First Name/last Name/Mobile/Email" class="search_input_box1" >
+					</mat-form-field>
+				</mat-grid-tile>
+			</mat-grid-list>
+		
+	
+		<mat-grid-list cols="3" rowHeight="90px" class="material_grid_box">
+	
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Salutation" disableRipple>
+					  <mat-option value="1">Mr.</mat-option>
+					  <mat-option value="2">Ms.</mat-option>
+					  <mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>
+			</mat-grid-tile>
+	
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<input type=text matInput  placeholder="First Name" class="fnm_input_box1" >
+				</mat-form-field>
+			</mat-grid-tile>	
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<input type=text matInput  placeholder="Last Name" class="lnm_input_box1" >
+				</mat-form-field>
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<input type=text matInput  placeholder="Mobile" class="mo_input_box1" >
+				</mat-form-field>
+			</mat-grid-tile>
+			
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<input type=text matInput  placeholder="Alternet Mobile No" class="altmo_input_box1" >
+				</mat-form-field>	
+			</mat-grid-tile>
+			
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<input type=text matInput  placeholder="Email" class="email_input_box1" >
+				</mat-form-field>		
+			</mat-grid-tile>
+			
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Curreent Location" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Mode" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Budget" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>			
+			</mat-grid-tile>
+		  
+		</mat-grid-list>
+
+		<mat-grid-list cols="2" rowHeight="90px" class="material_grid_box">
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Intrested Flat Configuration" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>			
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Project*" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>			
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Campaign*" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>			
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Primry Lead Source*" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>			
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Secondary Lead Source*" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>			
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Select touchpoint" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>			
+			</mat-grid-tile>
+
+			<mat-grid-tile class="example-container" rowspan="1"> 
+				<mat-form-field class="example-full-width">
+					<input type=text matInput  placeholder="Remark*" class="remark_input_box1" >
+				</mat-form-field>		
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Primary Status*" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>			
+			</mat-grid-tile>
+
+			<mat-grid-tile>
+				<mat-form-field class="example-full-width">
+					<mat-select placeholder="Secondary Status*" disableRipple>
+						<mat-option value="1">Mr.</mat-option>
+						<mat-option value="2">Ms.</mat-option>
+						<mat-option value="3">Mrs.</mat-option>
+					</mat-select>
+				</mat-form-field>			
+			</mat-grid-tile>
+		</mat-grid-list>
+
+		<div class="combobox">
+			<div class="reset_button">
+				<button  type="button" class="btn m-btn--pill btn-sm reset_btn">
+						CANCLE
+				</button>
+				
+
+				<div class="submit_button">
+					<button  type="button" class="btn m-btn--pill btn-secondary btn-sm submit_btn" >
+						SUBMIT
+					</button>
+				</div>
+			</div> 
+		</div> 
+
+	</form>
+	
+</div>	
+
+
+
+
+

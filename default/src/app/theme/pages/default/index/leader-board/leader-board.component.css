@@ -20,11 +20,12 @@ button#leaderboard {
     width: 100px;
     font-size: 16px;
     height: 32px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0px;
     font-family: unset;
     float: right;
     margin-left: 30px;
+    color: #375C8E;
 }
 
 button.icon_wrapper {

@@ -1,0 +1,46 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+}
+
+.basic-container {
+    padding: 30px;
+}
+
+.version-info {
+    font-size: 8pt;
+    float: right;
+}
+.m-demo__preview.m-demo__preview--btn.alligned.btns {
+    position: relative;
+    left: 150px;
+}
+.m-portlet__head.header_box1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.m-widget5__section.hdr_nm {
+    margin-left: -185px;
+}
+button.btn.m-btn--pill.btn-secondary {
+    font-family: unset;
+    font-weight: 500;
+    /* font-size: 16px; */
+}
+button.btn.m-btn--pill.btn-outline-success {
+    font-family: unset;
+    font-size: 14px;
+    font-weight: 500;
+}
+a.btn.btn-success.m-btn.m-btn--custom.m-btn--icon {
+    font-family: unset;
+    font-size: 14px;
+    font-weight: 600;
+}
+a.btn.btn-secondary.m-btn.m-btn--custom.m-btn--icon {
+    font-size: 14px;
+    font-family: unset;
+    font-weight: 600;
+}

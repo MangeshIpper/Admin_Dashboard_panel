@@ -246,8 +246,8 @@ $('#printbtn').on('click',function(){
 
 //leads sidebar
 $(function(){
-  var overlay = $('.overlay_over')
-$("#sidebartoggle").click(function(e) {
+  var overlay = $('.overlay')
+$("#sidebartoggle_mode").click(function(e) {
   e.preventDefault()
   overlay.show()
   $("#sidebar-wrapper_container").toggleClass("active")
@@ -259,3 +259,209 @@ $("#menuclose20").click(function(e) {
 }) 
 
 }) 
+
+
+
+//quickleads sidebar
+$(function(){
+  var overlay = $('.overlay_qlead')
+$("#quick_lead").click(function(e) {
+  e.preventDefault()
+  overlay.show()
+  $("#sidebar-wrapper_container_qleads").toggleClass("active")
+})  
+$("#menuclose_qleads").click(function(e) {
+  overlay.hide()
+  e.preventDefault()
+  $("#sidebar-wrapper_container_qleads").toggleClass("active")
+}) 
+
+}) 
+
+//leads Filter
+
+$(function(){
+  var overlay = $('.overlay')
+  $("#leads_filter").click(function(e) {
+    e.preventDefault()
+    overlay.show()
+    $("#leadsfilter").toggleClass("active")
+  })
+  $("#menu-close-btn_leads").click(function(e) {
+    e.preventDefault()
+    overlay.hide()
+    $("#leadsfilter").toggleClass("active")
+  })
+}) 
+
+//leads send mail
+$(function(){
+  var overlay = $('.overlay')
+  $("#send_mail").click(function(e) {
+    e.preventDefault()
+    overlay.show()
+    $("#sidebar-wrapper-sendmail").toggleClass("active")
+  })
+  $("#menuclose_sendmail").click(function(e) {
+    e.preventDefault()
+    overlay.hide()
+    $("#sidebar-wrapper-sendmail").toggleClass("active")
+  })
+}) 
+
+
+//follow up filter
+
+$(function(){
+    $("#menu-close_25").click(function(e) {
+        e.preventDefault()
+        $("#sidebar-wrapper11").toggleClass("active")
+    })
+    $("#menu-toggle11").click(function(e) {
+        e.preventDefault()
+        $("#sidebar-wrapper11").toggleClass("active")
+    })
+})
+
+//Date Range picker
+
+
+$(function() {
+    $('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+    }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'))
+    })
+})
+
+//checkboxes done for all select checkboxes
+
+function checkAll(ele) {
+    var checkboxes = document.getElementsByTagName('input')
+    if (ele.checked) {
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].type == 'checkbox') {
+                checkboxes[i].checked = true
+            }
+        }
+    } else {
+        for (var i = 0; i < checkboxes.length; i++) {
+            console.log(i)
+            if (checkboxes[i].type == 'checkbox') {
+                checkboxes[i].checked = false
+            }
+        }
+    }
+}
+
+
+
+//messedcall filter
+
+$(function(){
+  var overlay = $('.overlay')
+  $("#missedcall_filter").click(function(e) {
+    e.preventDefault()
+    overlay.show()
+    $("#sidebar-wrapper_missedcall_filter").toggleClass("active")
+  })
+  $("#menuclose_missedcall").click(function(e) {
+    e.preventDefault()
+    overlay.hide()
+    $("#sidebar-wrapper_missedcall_filter").toggleClass("active")
+  })
+}) 
+
+//Booking  filter
+
+$(function(){
+    $("#menu-close_20").click(function(e) {
+        e.preventDefault()
+        $("#sidebar-wrapper27").toggleClass("active")
+    })
+    $("#menu-toggles27").click(function(e) {
+        e.preventDefault()
+        $("#sidebar-wrapper27").toggleClass("active")
+    })
+})
+
+//campaign  filter
+
+
+$(function(){
+    $("#menu-close_28").click(function(e) {
+        e.preventDefault()
+        $("#sidebar-wrapper28").toggleClass("active")
+    })
+    $("#menu-toggles28").click(function(e) {
+        e.preventDefault()
+        $("#sidebar-wrapper28").toggleClass("active")
+    })
+})
+
+//editbooking sidebar
+
+$(function(){
+    var overlay = $('.overlay_editbooking')
+    $("#edit_booking").click(function(e) {
+        e.preventDefault()
+        overlay.show()
+        $("#sidebar-wrapper_container_editbk").toggleClass("active")
+    })
+    $("#menuclose_editb").click(function(e) {
+        overlay.hide()
+        e.preventDefault()
+        $("#sidebar-wrapper_container_editbk").toggleClass("active")
+    })
+
+})
+
+//editcampaign sidebar
+
+$(function(){
+    var overlay = $('.overlay_editcampaign')
+    $("#edit_campaign").click(function(e) {
+        e.preventDefault()
+        overlay.show()
+        $("#sidebar-wrapper_container_editcmp").toggleClass("active")
+    })
+    $("#menuclose_edicmp").click(function(e) {
+        overlay.hide()
+        e.preventDefault()
+        $("#sidebar-wrapper_container_editcmp").toggleClass("active")
+    })
+
+})
+
+
+//Booking  filter
+
+$(function(){
+    $("#menu-close_14").click(function(e) {
+        e.preventDefault()
+        $("#sidebar-wrapper29").toggleClass("active")
+    })
+    $("#menu-toggles15").click(function(e) {
+        e.preventDefault()
+        $("#sidebar-wrapper29").toggleClass("active")
+    })
+})
+
+//addtask sidebar
+
+$(function(){
+    var overlay = $('.overlay_addtask')
+    $("#add_task").click(function(e) {
+        e.preventDefault()
+        overlay.show()
+        $("#sidebar-wrapper_container_addtask").toggleClass("active")
+    })
+    $("#menuclose_addtask").click(function(e) {
+        overlay.hide()
+        e.preventDefault()
+        $("#sidebar-wrapper_container_addtask").toggleClass("active")
+    })
+
+})
+
+

@@ -55,7 +55,7 @@ h6.inq_nm {
     font-weight: 600;
 }
 
-#sidebar-wrapper_container{
+#sidebar-wrapper_container_qleads{
 
     height: 100%;
     width: 0;
@@ -72,7 +72,7 @@ h6.inq_nm {
   }
 
 
-#sidebar-wrapper_container.active {
+#sidebar-wrapper_container_qleads.active {
     right: 250px;
     width: 900px;
     transition: all 0.5s ease-out 0s;
@@ -82,7 +82,7 @@ h6.inq_nm {
     -o-transition: all 0.5s ease-out 0s;
   }
 
-.overlay {
+.overlay_qlead {
     position: fixed;
     display: none;
     width: 100%;
@@ -153,4 +153,87 @@ a.nav-link.m-tabs__link.link1.link_btn1 {
 .m-tabs-line.m-tabs-line--brand a.m-tabs__link.active, .m-tabs-line.m-tabs-line--brand a.m-tabs__link:hover, .m-tabs-line.m-tabs-line--brand.nav.nav-tabs .nav-link.active, .m-tabs-line.m-tabs-line--brand.nav.nav-tabs .nav-link:hover {
     color: #272630;
     border-bottom: unset;
+}
+.mat-paginator-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 56px;
+    padding: 0 8px;
+    flex-wrap: wrap-reverse;
+}
+
+.flat_details {
+    display: flex;
+    background-color: #5497F0;
+    justify-content: space-between;
+    height: 69px;
+}
+
+h5.flat_cls {
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+span#menuclose_qleads {
+    color: white;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    right: 10px;
+}
+.form_filds {
+    display: flex;
+    justify-content: space-around;
+}
+
+.search_block1 {
+    display: flex;
+    position: relative;
+    left: 60px;
+    width: 100%;
+}
+
+
+.example-full-width {
+    width: 90%;
+  }
+  .example-full-width_search{
+      width: 90%;
+  }
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .combobox {
+    display: flex;
+    justify-content: flex-end;
+}
+.reset_button {
+    display: flex;
+}
+ 
+  button.btn.m-btn--pill.btn-sm.reset_btn {
+    position: relative;
+    padding: 8px 20px 7px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border: unset;
+}
+button.btn.m-btn--pill.btn-secondary.btn-sm.submit_btn {
+    position: relative;
+    padding: 10px 20px 10px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: green;
+    border: unset;
+    font-style: unset !important;
+    margin-right: 15px;
 }

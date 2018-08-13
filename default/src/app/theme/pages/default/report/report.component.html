@@ -1,0 +1,467 @@
+<div class="panel-heading">
+    <h4><b>Report</b></h4>
+</div>
+<div class="row">
+    <div class="col-md-12 side_bar_report">
+        <div class="col-xs-3"> <!-- required for floating -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tabs-left">
+                <li [ngClass]="{'active': tab.active}" *ngFor="let tab of tabs">
+                    <a (click)="tabChange(tab)">{{tab.name}}</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col-xs-9">
+            <div class="tab-content">
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 1, 'hideTab':selectedUserTab != 1}"> <!-- Profile tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Detail Lead report
+                        </div>
+                        <div class="panel-body">
+                            <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                <mat-grid-tile>
+                            <mat-form-field>
+                                <mat-select placeholder="Runs On" disableRipple>
+                                    <mat-option value="1">Runs on the Creation Date</mat-option>
+                                    <mat-option value="2">Runson The Planned Date</mat-option>
+                                    <mat-option value="3">Runs On the Actual Date</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            </mat-grid-tile>
+
+                            <mat-grid-tile>
+                                <mat-form-field class="fnm">
+                                    <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                </mat-form-field>
+                            </mat-grid-tile>
+                                <mat-grid-tile>
+                                    <mat-form-field>
+                                        <mat-select placeholder="All Projects/Phases" disableRipple>
+                                            <mat-option value="1">Raunak City 1</mat-option>
+                                            <mat-option value="2">Raunak City 2</mat-option>
+                                            <mat-option value="3">Raunak City 3</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </div>
+                    </div>
+                    <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+                </div>
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 2, 'hideTab':selectedUserTab != 2}"> <!-- Change password tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Touch Point Report
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="Runs On" disableRipple>
+                                                <mat-option value="1">Runs on the Creation Date</mat-option>
+                                                <mat-option value="2">Runson The Planned Date</mat-option>
+                                                <mat-option value="3">Runs On the Actual Date</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+
+                                    <mat-grid-tile>
+                                        <mat-form-field class="fnm">
+                                            <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="All Projects/Phases" disableRipple>
+                                                <mat-option value="1">Raunak City 1</mat-option>
+                                                <mat-option value="2">Raunak City 2</mat-option>
+                                                <mat-option value="3">Raunak City 3</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+                        <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 3, 'hideTab':selectedUserTab != 3}"> <!-- Admin tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Project wise Report
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="Runs On" disableRipple>
+                                                <mat-option value="1">Runs on the Creation Date</mat-option>
+                                                <mat-option value="2">Runson The Planned Date</mat-option>
+                                                <mat-option value="3">Runs On the Actual Date</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+
+                                    <mat-grid-tile>
+                                        <mat-form-field class="fnm">
+                                            <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="All Projects/Phases" disableRipple>
+                                                <mat-option value="1">Raunak City 1</mat-option>
+                                                <mat-option value="2">Raunak City 2</mat-option>
+                                                <mat-option value="3">Raunak City 3</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+                        <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+                    </div>
+                </div>
+
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 4, 'hideTab':selectedUserTab != 4}"> <!-- stripe account tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Pending Follow up Report
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="Runs On" disableRipple>
+                                                <mat-option value="1">Runs on the Creation Date</mat-option>
+                                                <mat-option value="2">Runson The Planned Date</mat-option>
+                                                <mat-option value="3">Runs On the Actual Date</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+
+                                    <mat-grid-tile>
+                                        <mat-form-field class="fnm">
+                                            <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="All Projects/Phases" disableRipple>
+                                                <mat-option value="1">Raunak City 1</mat-option>
+                                                <mat-option value="2">Raunak City 2</mat-option>
+                                                <mat-option value="3">Raunak City 3</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+                        <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 5, 'hideTab':selectedUserTab != 5}"> <!-- Admin tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Source Medium Wise Report
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="Runs On" disableRipple>
+                                                <mat-option value="1">Runs on the Creation Date</mat-option>
+                                                <mat-option value="2">Runson The Planned Date</mat-option>
+                                                <mat-option value="3">Runs On the Actual Date</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+
+                                    <mat-grid-tile>
+                                        <mat-form-field class="fnm">
+                                            <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="All Projects/Phases" disableRipple>
+                                                <mat-option value="1">Raunak City 1</mat-option>
+                                                <mat-option value="2">Raunak City 2</mat-option>
+                                                <mat-option value="3">Raunak City 3</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+                        <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+
+                    </div>
+                </div>
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 6, 'hideTab':selectedUserTab != 6}"> <!-- Change password tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Site Visit Report
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="Runs On" disableRipple>
+                                                <mat-option value="1">Runs on the Creation Date</mat-option>
+                                                <mat-option value="2">Runson The Planned Date</mat-option>
+                                                <mat-option value="3">Runs On the Actual Date</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+
+                                    <mat-grid-tile>
+                                        <mat-form-field class="fnm">
+                                            <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="All Projects/Phases" disableRipple>
+                                                <mat-option value="1">Raunak City 1</mat-option>
+                                                <mat-option value="2">Raunak City 2</mat-option>
+                                                <mat-option value="3">Raunak City 3</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+                        <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 7, 'hideTab':selectedUserTab != 7}"> <!-- Admin tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Failure Ananlysis Report
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="Runs On" disableRipple>
+                                                <mat-option value="1">Runs on the Creation Date</mat-option>
+                                                <mat-option value="2">Runson The Planned Date</mat-option>
+                                                <mat-option value="3">Runs On the Actual Date</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+
+                                    <mat-grid-tile>
+                                        <mat-form-field class="fnm">
+                                            <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="All Projects/Phases" disableRipple>
+                                                <mat-option value="1">Raunak City 1</mat-option>
+                                                <mat-option value="2">Raunak City 2</mat-option>
+                                                <mat-option value="3">Raunak City 3</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+                        <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 8, 'hideTab':selectedUserTab != 8}"> <!-- stripe account tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Site Visit confirm List
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="Runs On" disableRipple>
+                                                <mat-option value="1">Runs on the Creation Date</mat-option>
+                                                <mat-option value="2">Runson The Planned Date</mat-option>
+                                                <mat-option value="3">Runs On the Actual Date</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+
+                                    <mat-grid-tile>
+                                        <mat-form-field class="fnm">
+                                            <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="All Projects/Phases" disableRipple>
+                                                <mat-option value="1">Raunak City 1</mat-option>
+                                                <mat-option value="2">Raunak City 2</mat-option>
+                                                <mat-option value="3">Raunak City 3</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+                        <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 9, 'hideTab':selectedUserTab != 9}"> <!-- Admin tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Campaign Report
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="Runs On" disableRipple>
+                                                <mat-option value="1">Runs on the Creation Date</mat-option>
+                                                <mat-option value="2">Runson The Planned Date</mat-option>
+                                                <mat-option value="3">Runs On the Actual Date</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+
+                                    <mat-grid-tile>
+                                        <mat-form-field class="fnm">
+                                            <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="All Projects/Phases" disableRipple>
+                                                <mat-option value="1">Raunak City 1</mat-option>
+                                                <mat-option value="2">Raunak City 2</mat-option>
+                                                <mat-option value="3">Raunak City 3</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+                        <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 10, 'hideTab':selectedUserTab != 10}"> <!-- Change password tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Call Report
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="Runs On" disableRipple>
+                                                <mat-option value="1">Runs on the Creation Date</mat-option>
+                                                <mat-option value="2">Runson The Planned Date</mat-option>
+                                                <mat-option value="3">Runs On the Actual Date</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+
+                                    <mat-grid-tile>
+                                        <mat-form-field class="fnm">
+                                            <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="All Projects/Phases" disableRipple>
+                                                <mat-option value="1">Raunak City 1</mat-option>
+                                                <mat-option value="2">Raunak City 2</mat-option>
+                                                <mat-option value="3">Raunak City 3</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+                        <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 11, 'hideTab':selectedUserTab != 11}"> <!-- Admin tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Missed Call Report
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                <mat-grid-list cols="4" rowHeight="100px" class="material_grid_box">
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="Runs On" disableRipple>
+                                                <mat-option value="1">Runs on the Creation Date</mat-option>
+                                                <mat-option value="2">Runson The Planned Date</mat-option>
+                                                <mat-option value="3">Runs On the Actual Date</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+
+                                    <mat-grid-tile>
+                                        <mat-form-field class="fnm">
+                                            <input type=text matInput  placeholder="Date ange Picker" class="fnm_input_box1" >
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-form-field>
+                                            <mat-select placeholder="All Projects/Phases" disableRipple>
+                                                <mat-option value="1">Raunak City 1</mat-option>
+                                                <mat-option value="2">Raunak City 2</mat-option>
+                                                <mat-option value="3">Raunak City 3</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+                        <button type="button" class="btn m-btn--pill    btn-info m-btn m-btn--custom">Export</button>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane active" [ngClass]="{'showTab':selectedUserTab == 12, 'hideTab':selectedUserTab != 12}"> <!-- stripe account tab -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Booking Report
+                        </div>
+                        <div class="panel-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

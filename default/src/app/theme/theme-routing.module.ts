@@ -19,44 +19,7 @@ const routes: Routes = [
                 "loadChildren": ".\/pages\/default\/angular\/ng-bootstrap\/ng-bootstrap.module#NgBootstrapModule"
             },
 
-            // {
-            //     "path": "summary",
-            //     "loadChildren": ".\/pages\/default\/index\/index.module#IndexModule"
-            // },
-
-            // {
-            //     "path": "index/funfacts",
-            //     "loadChildren": ".\/pages\/default\/index\/index.module#IndexModule"
-            // },
-
-            // {
-            //     "path": "index/analytics",
-            //     "loadChildren": ".\/pages\/default\/index\/index.module#IndexModule"
-            // },
-
-            // {
-            //     "path": "index/inventory",
-            //     "loadChildren": ".\/pages\/default\/index\/index.module#IndexModule"
-            // },
-
-            // {
-            //     "path": "index/leaderboard",
-            //     "loadChildren": ".\/pages\/default\/index\/index.module#IndexModule"
-            // },
-
-            // {
-            //     "path": "index/actionchange",
-            //     "loadChildren": ".\/pages\/default\/index\/index.module#IndexModule"
-            // },
-
-
-            // {
-            //     "path": "inventory",
-            //     "loadChildren": ".\/pages\/default\index\/index.module#IndexModule"
-            // },
-
-
-
+          
 
             {
                 "path": "angular\/primeng",
@@ -71,8 +34,39 @@ const routes: Routes = [
                 "path": "leads",
                 "loadChildren": ".\/pages\/default\/leads\/leads.module#LeadsModule"
             },
+            
+            {
+                "path": "missedcall",
+                "loadChildren": ".\/pages\/default\/missedcall\/missedcall.module#MissedcallModule"
+            },
 
+            {
+                "path": "task",
+                "loadChildren": ".\/pages\/default\/task\/task.module#TaskModule"
+            },
 
+            {
+                "path": "campaign",
+                "loadChildren": ".\/pages\/default\/campaign\/campaign.module#CampaignModule"
+            },
+
+            {
+                "path": "booking",
+                "loadChildren": ".\/pages\/default\/booking\/booking.module#BookingModule"
+            },
+            {
+                "path": "followup",
+                "loadChildren": ".\/pages\/default\/followup\/followup.module#FollowupModule"
+            },
+            {
+                "path": "report",
+                "loadChildren": ".\/pages\/default\/report\/report.module#ReportModule"
+            },
+
+            // {
+            //     "path": "followupedit",
+            //     "loadChildren": ".\/pages\/default\/followupedit\/followupedit.module#FollowupeditModule"
+            // },
             {
                 "path": "components\/base\/typography",
                 "loadChildren": ".\/pages\/default\/components\/base\/base-typography\/base-typography.module#BaseTypographyModule"

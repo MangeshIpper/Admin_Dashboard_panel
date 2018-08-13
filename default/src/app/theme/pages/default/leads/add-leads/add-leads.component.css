@@ -55,7 +55,8 @@ b.nos {
 .main_div {
     border: 1px solid lightgray;
     width: 98%;
-    height: 700px;
+    /* height: 700px; */
+    position: relative;
     margin-top: 20px;
     background-color: #F8F8F8;
 }
@@ -109,3 +110,125 @@ b.nos {
 .mat_body {
     margin-left: 15px;
 }
+.search_box1 {
+    float: right;
+}
+mat-form-field.search_block1.mat-form-field.ng-tns-c6-1.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-hide-placeholder._mat-animation-noopable {
+    width: 300px;
+}
+.mat-stepper-vertical-line::before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    bottom: -16px;
+    left: 7px !important;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+.mat-step-label-selected {
+    font-size: 18px !important;
+    font-weight: 500;
+}
+.mat-step-icon, .mat-step-icon-not-touched {
+    border-radius: 50%;
+    height: 40px !important;
+    width: 40px !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0;
+}
+.col-md-4.TIMELINE_BLOCK {
+    border-right: 1px solid lightgray;
+    height: 700px;
+}
+.card.card-body {
+    position: relative;
+}
+mat-grid-list.material_grid_box.mat-grid-list {
+    position: relative;
+    top: 50px;
+}
+.card {
+    margin-top: 0px;
+    border: none !important;
+}
+button.btn.m-btn--pill.btn-secondary.btn-sm.toggle.continue_btn {
+    padding: 10px 25px 8px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #5497F0;
+    color: white;
+}
+button.btn.m-btn--pill.btn-secondary.btn-sm.toggle.back_btn {
+    padding:10px 40px 8px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #5497F0;
+    color: white;
+}
+button.btn.m-btn--pill.btn-secondary.btn-sm.toggle.submit_btn {
+    padding:10px 40px 8px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1BB438;
+    color: white;
+}
+i.material-icons {
+    color: white !important;
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 6px;
+}
+
+i.fa.bckbtn{
+    color: white;
+    font-size: 30px;
+    padding-right: 10px;
+    position: relative;
+    bottom: 2px;
+}
+
+
+
+
+
+
+button.btn.m-btn--pill.btn-secondary.btn-sm.toggle.continue_btn.mat-button._mat-animation-noopable {
+    position: relative;
+    bottom: 5px;
+}
+.search_block1{
+    width: 25%;
+    float: right;
+}
+.address{
+    width: 93%;
+}
+.search_content_box {
+    padding: 20px;
+}
+.mat_box{
+    margin-top: 30px;
+}
+.stepper_field{
+    width: 80%;
+}
+.box_container_fields {
+    position: relative;
+    top: 30px;
+}
+
+.stepper_field_full{
+    width: 90%;
+}
+.stepper_field_extrimefull{
+    width: 100%;
+}
+
+
+
+
+
+
+

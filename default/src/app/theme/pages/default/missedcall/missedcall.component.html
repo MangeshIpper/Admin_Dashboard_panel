@@ -1,0 +1,417 @@
+<div class="body_main_box">
+<nav mat-tab-nav-bar>
+        <div class="content_block">
+            <div class="inquiries">
+                <h6 class="inq_nm">{{totalinq}} Missed Calls </h6>
+            </div>
+
+            <div class="filter_pill">
+                <button id="missedcall_filter" type="button" class="btn m-btn--pill btn-secondary btn-sm toggle filter_btn">
+                    FILTER
+                </button>
+            </div>
+        </div>
+  </nav>
+
+
+
+
+
+<div class="row back">
+    <div class="overlay"></div>
+      <div class="main_containt">
+        
+
+        
+
+   <div class="main_card">
+
+    <div class="table_card">
+            <div class="card card-body">
+  
+                 <div class="table-wrapper-2">
+                    <table  class="table table-striped table-bordered table-sm" cellspacing="0" width="100%" id="pagitable">
+                        <thead class="table_head">
+                            <tr class="header_row_box">
+                                <th class="sorted block_header" (click)="sort('misscall_date')">Missed Date
+                                    <span class="glyphicon sort-icon" *ngIf="key =='misscall_date'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                                </th>
+                                
+                                <th class="sorted block_header" (click)="sort('customer_name')">Customer Name
+                                    <span class="glyphicon sort-icon" *ngIf="key =='customer_name'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                                </th>
+                                <th class="sorted block_header" (click)="sort('Contact_Number')">Contact No
+                                    <span class="glyphicon sort-icon" *ngIf="key =='Contact_Number'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                                </th>
+                                <th class="sorted block_header" (click)="sort('Project')">Project/Phase
+                                    <span class="glyphicon sort-icon" *ngIf="key =='Project'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                                </th>
+                                <th class="sorted block_header" (click)="sort('Lead_Owners')">Lead Owners
+                                    <span class="glyphicon sort-icon" *ngIf="key =='Lead_Owners'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                                </th>
+                                <th class="sorted block_header" (click)="sort('Mode')">Action
+                                    <span class="glyphicon sort-icon" *ngIf="key =='Mode'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="myList_table">
+                            <tr *ngFor="let item of sitevisites | paginate: { itemsPerPage: 10, currentPage: p } | orderBy: key : reverse  ">
+                                <td class="col_block11">{{item.misscall_date}}</td>
+                                <td class="col_block11">{{item.customer_name}}</td>
+                                <td class="col_block11"><a href=""  (click)="openDialog($event)">{{item.Contact_Number}}</a></td>
+                                <td class="col_block11">{{item.Project}}</td>
+                                <td class="col_block11">{{item.Lead_Owners}}</td>
+                                <!-- <td class="col_block11"><button id="sidebartoggle">A</button></td> -->
+                                <td class="col_block11">
+                                   <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="click" aria-expanded="true">
+                                           <a href="#" class="m-portlet__nav-link m-dropdown__toggle btn m-btn m-btn--link">
+                                               <i class="la la-ellipsis-h"></i>
+                                           </a>
+                                           <div class="m-dropdown__wrapper" style="z-index: 101;">
+                                                   <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 29.5px;"></span>
+                                                   <div class="m-dropdown__inner">
+                                                       <div class="m-dropdown__body">              
+                                                           <div class="m-dropdown__content">
+                                                               <ul class="m-nav">
+                                                                   <li class="m-nav__item">
+                                                                        <a href="" class="m-nav__link">
+                                                                            <i class="fa fa-pencil"></i>
+                                                                            <span class="m-nav__link-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Edit</span>
+                                                                        </a>
+                                                                    </li>
+                                                                   <li class="m-nav__item">
+                                                                       <a href="" class="m-nav__link">
+                                                                            <i class="fa fa-trash-o"></i>
+                                                                              <span class="m-nav__link-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Delete</span>
+                                                                       </a>
+                                                                   </li>
+                                                                   <li class="m-nav__item">
+                                                                       <a href="" class="m-nav__link">
+                                                                            <i class="fa fa-wechat"></i>
+                                                                           <span class="m-nav__link-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send SMS</span>
+                                                                       </a>
+                                                                   </li>
+                                                                   <li class="m-nav__item">
+                                                                       <a href="" class="m-nav__link">
+                                                                           <i class="fa fa-envelope-o"></i>
+                                                                           <span class="m-nav__link-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send Email</span>
+                                                                       </a>
+                                                                   </li>
+                                                                   <li class="m-nav__item">
+                                                                        <a href="" class="m-nav__link">
+                                                                            <i class="fa fa-copy"></i>
+                                                                            <span class="m-nav__link-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replicate</span>
+                                                                        </a>
+                                                                    </li>
+                                                                
+                                                               </ul>
+                                                          </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                     </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagination_section">
+                        <div class="total_content">
+                            <h5 class="totalpages_content">Shown : 1/{{totalinq}}</h5>
+                        </div>
+                        <div class="pagination_section1">
+                          <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                        </div>
+                    </div>
+
+                    
+                  
+                    
+                </div>
+  
+            </div>
+        </div>
+  </div>
+  
+
+
+  <div id="sidebar-wrapper_container">
+      <div class="flat_details">
+          <div class="flat_name">
+              <h5 class="flat_cls">LEAD DETAILS</h5>
+          </div>
+          <div class="sidebar-nav">
+              <span class="closebtnicon" id="menuclose20">
+              <i class="la la-close filter_icon1" ></i>
+          </span>
+          </div>
+      </div>
+
+      <div class="row side_bar">
+          <h6 class="cust_info">Customer Information</h6>
+      </div>
+      
+          <table class="table_box">
+              <tbody class="box111">
+          <tr>
+              <td>Id  <b>17470</b></td>
+              <td>Created At  <b>23 May, 2018, 05:55</b></td>
+          </tr>
+          <tr>
+              <td>Updaeted At  <b>23 May, 2018</b></td>
+              <td>Name  <b>Mr, Mahesh Kumar</b></td>
+          </tr>
+          <tr>
+              <td>Mobile  <b>7715046761</b></td>
+              <td>Email  <b>mahesh.kadu@gmail.com</b></td>
+          </tr>
+              </tbody>
+         </table> 
+      
+         <div class="row side_bar">
+          <h6 class="cust_info">Other Information</h6>
+          </div>
+      
+          <table class="table_box">
+              <tbody class="box112">
+          <tr class="table_row_blocks">
+              <td class="table_col_blocks">Project/Phase  <b>Clarion</b></td>
+              <td class="table_col_blocks">Building  <b>Nell-Nirmal</b></td>
+          </tr>
+          <tr class="table_row_blocks">
+              <td class="table_col_blocks">Primary Source  <b>Channel Partners</b></td>
+              <td class="table_col_blocks">Lead Owners <b>Site Visit Done</b></td>
+          </tr>
+          <tr class="table_row_blocks">
+              <td class="table_col_blocks">Broker Name <b>Sangeet Kumar/Deva Birader</b></td>
+              <td class="table_col_blocks">Secondary Source  <b>Channel Partner</b></td>
+          </tr>
+          <tr class="table_row_blocks">
+              <td class="table_col_blocks">Secondary Status  <b>Site Visit Done</b></td>
+          </tr>
+          <tr class="table_row_blocks">
+              <td class="table_col_blocks">Broker Name <b>Sangeet Kumar/Deva Birader</b></td>
+          </tr>
+          <tr class="bottom_content">
+              <td class="table_col_blocks_last">Remark : <b>15 May, 2018, 10:AM By: Aryan Vijay Site visit done</b></td>
+          </tr>
+              </tbody>
+         </table>     
+
+         <div class="row side_bar1">
+          <h6 class="cust_info">Follow up, site visit & booking history</h6>
+          </div>
+      
+          <table class="table_box">
+              <thead class="head_block">
+                  <tr>
+                      <th class="table_heading_part">Type</th>
+                      <th class="table_heading_part">Planned Date</th>
+                      <th class="table_heading_part">Actual Date</th>
+                      <th class="table_heading_part">Status</th>
+                      <th class="table_heading_part">User</th>
+                      <th class="table_heading_part">Remarks</th>
+                      <th class="table_heading_part">Updated on</th>
+                  </tr>
+              </thead>
+              <tbody class="box113">
+                 <tr>
+                     <td class="table_body_part">Site Visit</td>
+                     <td class="table_body_part">15, May, 2018 18:07 AM</td>
+                     <td class="table_body_part">15, May, 2018 18:07 AM</td>
+                     <td class="table_body_part">Done</td>
+                     <td class="table_body_part">Site visit done</td>
+                     <td class="table_body_part">Super Admin</td>
+                     <td class="table_body_part"></td>
+                 </tr>
+              </tbody>
+         </table>     
+
+         <div class="row side_bar1">
+              <h6 class="cust_info">Call Details</h6>
+          </div>
+          <table class="table_box">
+              <thead class="head_block">
+                  <tr>
+                      <th class="table_heading_part">Date</th>
+                      <th class="table_heading_part">Call Duration</th>
+                      <th class="table_heading_part">Attended By</th>
+                      <th class="table_heading_part">Recording</th>
+                  </tr>
+              </thead>
+              <tbody class="box113">
+                  
+              </tbody>
+          </table>
+
+          <div class="edit_button">
+              <button  type="button" class="btn m-btn--pill btn-secondary btn-sm Edit_btn" id="editbtn" >
+                  <i class="flaticon-edit-1"></i>  Edit
+              </button>
+          </div>
+</div>
+    
+
+<div id="sidebar-wrapper_missedcall_filter">
+        <div class="sidebar-nav">
+            <i class="la la-close missedcall_filter" id="menuclose_missedcall"></i>
+        </div>
+        <div class="filter_1">
+                <h4 class="sidebar_filter_header_nm">Filter</h4>
+        </div>
+
+        <div class="content_block_box_combo">
+            <div class="sidebar_name">
+                <h5 class="date_range_nm">Id</h5>
+            </div> 
+            <div class="datepicker_input">
+                <input class="datepicker_input_box" type="text" value="802462856539727" />
+            </div>
+            <div class="sidebar_name">
+                <h5 class="date_range_nm">Customer Details</h5>
+            </div> 
+            <div class="datepicker_input">
+                <input class="datepicker_input_box" type="text" value="Customer id/Customer/Contact" />
+            </div>
+           
+            <div class="sidebar_name">
+                <h5 class="date_range_nm">Select Mode</h5>
+            </div> 
+            <div class="datepicker_input">
+                <input class="datepicker_input_box" type="text" value="01/01/2018 - 01/15/2018" />
+            </div>
+            
+            <div class="combobox">
+                <div class="reset_button">
+                    <button  type="button" class="btn m-btn--pill btn-sm reset_btn" id="clear" >
+                            RESET
+                    </button>
+                    
+    
+                    <div class="submit_button">
+                        <button  type="button" class="btn m-btn--pill btn-secondary btn-sm submit_btn" >
+                            SUBMIT
+                        </button>
+                    </div>
+                </div> 
+            </div> 
+        </div>    
+</div>        
+
+
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <mat-card class="block_card1">
+
+         <mat-form-field>
+           <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+        </mat-form-field>
+
+        <table mat-table [dataSource]="dataSource" matSort  class="mat-elevation-z8 box_table_1">
+
+          <ng-container matColumnDef="select">
+            <th mat-header-cell *matHeaderCellDef class="material-header-part" style="border-right: 1px solid lightgray">
+              <mat-checkbox (change)="$event ? masterToggle() : null"
+                            [checked]="selection.hasValue() && isAllSelected()"
+                            [indeterminate]="selection.hasValue() && !isAllSelected()">
+              </mat-checkbox>
+            </th>
+            <td mat-cell *matCellDef="let row" style="border-right: 1px solid lightgray">
+              <mat-checkbox (click)="$event.stopPropagation()"
+                            (change)="$event ? selection.toggle(row) : null"
+                            [checked]="selection.isSelected(row)">
+              </mat-checkbox>
+            </td>
+          </ng-container>
+        
+          <ng-container matColumnDef="ID" class="id">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="border-right: 1px solid lightgray" class="id_1"> ID </th>
+            <td mat-cell *matCellDef="let element" style="border-right: 1px solid lightgray" class="id_2"> {{element.ID}} </td>
+          </ng-container>
+        
+          <ng-container matColumnDef="Customer_ID" class="c_id">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="border-right: 1px solid lightgray" class="c_id1"> Customer ID </th>
+            <td mat-cell *matCellDef="let element" style="border-right: 1px solid lightgray" class="c_id2"> {{element.Customer_ID}} </td>
+          </ng-container>
+        
+          <ng-container matColumnDef="Created_Date" class="c_date">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="border-right: 1px solid lightgray" class="c_date1"> Created Date </th>
+            <td mat-cell *matCellDef="let element" style="border-right: 1px solid lightgray" class="c_date1"> {{element.Created_Date}} </td>
+          </ng-container>
+        
+          <ng-container matColumnDef="Customer_Name" class="c_name" >
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="border-right: 1px solid lightgray" class="c_name1"> Customer Name </th>
+            <td mat-cell *matCellDef="let element" style="border-right: 1px solid lightgray" class="c_name2"> {{element.Customer_Name}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="Contact_No" class="c_no">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="border-right: 1px solid lightgray" class="c_no1"> Contact No </th>
+            <td mat-cell *matCellDef="let element" style="border-right: 1px solid lightgray" class="c_no2"> {{element.Contact_No}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="Mode" class="mode">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="border-right: 1px solid lightgray" class="mode_1"> Mode </th>
+            <td mat-cell *matCellDef="let element" style="border-right: 1px solid lightgray" class="mode_2"><button> {{element.Mode}} </button></td>
+          </ng-container>
+
+          <ng-container matColumnDef="Secondary_Source" class="sec_source">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="border-right: 1px solid lightgray" class="sec_source_1"> Secondary Source </th>
+            <td mat-cell *matCellDef="let element" style="border-right: 1px solid lightgray" class="sec_source2"> {{element.Secondary_Source}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="Primary_Status" class="pri_status">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="border-right: 1px solid lightgray" class="pri_status1"> Primary Status </th>
+            <td mat-cell *matCellDef="let element" style="border-right: 1px solid lightgray" class="pri_status2"> {{element.Primary_Status}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="Secondary_Status" class="sec_status">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="border-right: 1px solid lightgray" class="sec_status1"> Secondary Status </th>
+            <td mat-cell *matCellDef="let element" style="border-right: 1px solid lightgray" class="sec_status2"> {{element.Secondary_Status}} </td>
+          </ng-container>
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+        
+        <mat-paginator class="pagination_block" #paginator [length]="length"
+          [pageSize]="pageSize"
+          [pageSizeOptions]="pageSizeOptions" 
+          [showFirstLastButtons]="true" pageIndex=1
+          (page)="pageEvent = $event" >
+
+          <div class="mat-paginator-container pagin_block">
+
+          </div>
+        </mat-paginator>
+
+      </mat-card>
+   -->

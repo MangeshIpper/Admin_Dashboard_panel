@@ -1,0 +1,61 @@
+div#cdk-overlay-0 {
+    max-width: 80vw;
+    pointer-events: auto;
+    width: 500px;
+    height: 180px;
+    position: relative !important;
+    bottom: 205px;
+    left: 100px;
+}
+
+mat-form-field.example-full-width.mat-form-field.ng-tns-c7-13.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-hide-placeholder._mat-animation-noopable {
+    width: 100%;
+    text-align: center;
+}
+button.cancel_tab.mat-button._mat-animation-noopable {
+    width: 50%;
+    text-align: left;
+    height: 45px;
+}
+button.call_tab.mat-button._mat-animation-noopable {
+    width: 50%;
+    text-align: right;
+    height: 45px;
+}
+button.call_tab.mat-button._mat-animation-noopable {
+    color: green;
+}
+button.cancel_tab.mat-button._mat-animation-noopable {
+    color: red;
+}
+i.material-icons.call1 {
+    position: relative;
+    right: 10px;
+}
+i.material-icons.cancel1 {
+    padding-right: 10px;
+}
+/* input#mat-input-1 {
+    text-align: center;
+} */
+.button-row.btns {
+    margin-top: 10px;
+}
+.example-full-width {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,7 +16,7 @@
 }
 
 .btn-brand { 
-    background-color: #599ffd !important;
+    background-color: #50b5f2 !important;
 } 
 
 .container-fluid {
@@ -301,7 +301,7 @@ color: #828282;
     height: 100px;
     width: 20%;
     float: left;
-    background-color: #599ffd;
+    background-color: #50b5f2;
     text-align: center;
 }
 .tchpntnm3 {
@@ -315,7 +315,7 @@ color: #828282;
     height: 100px;
     width: 20%;
     float: left;
-    background-color: #599ffd;
+    background-color: #50b5f2;
     text-align: center;
 }
 
@@ -429,7 +429,8 @@ color: #828282;
     right: 15px;
 }
 .btn.btn-outline-info.col_btn1 {
-    background: linear-gradient(135deg,#307de3 30%,#70acfc 100%);
+    /* background: linear-gradient(135deg,#307de3 30%,#70acfc 100%); */
+    background: #50b5f2;
     color: white!important;
 }
 .inq{
@@ -618,7 +619,7 @@ img {
     position: relative;
     padding: 2px;
     border-radius: 10px;
-    background-color: #599ffd;
+    background-color: #50b5f2;
 }
 
 .m-scrollable.mCustomScrollbar._mCS_1.mCS-autoHide {

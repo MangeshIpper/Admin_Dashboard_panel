@@ -42,11 +42,13 @@ import { MatFormFieldModule, MatInputModule } from '@angular/material';
 
 
 
+
 @NgModule({
     declarations: [
         ThemeComponent,
         AppComponent,
         SidebarComponent,
+        
 
     ],
     imports: [

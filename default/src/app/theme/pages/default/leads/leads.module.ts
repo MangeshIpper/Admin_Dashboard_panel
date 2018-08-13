@@ -14,11 +14,20 @@ import {MatStepperModule} from '@angular/material/stepper';
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatGridListModule} from '@angular/material/grid-list';
-
-
-
-
-
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatMenuModule} from '@angular/material/menu';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { Ng2OrderModule } from 'ng2-order-pipe';
+import { CallComponent } from './call/call.component';
 
 
 const routes: Routes = [
@@ -31,12 +40,8 @@ const routes: Routes = [
                 "component": LeadsComponent,
                 "children": [
                     {
-                        "path": "lead/add",
+                        "path": "add",
                         "component": AddLeadsComponent
-                    },
-                    {
-                        "path": "lead/qcall",
-                        "component": QuickCallComponent
                     },
                     {
                         "path": "lead/qcall",
@@ -55,7 +60,8 @@ const routes: Routes = [
 @NgModule({
     imports: [
         CommonModule, RouterModule.forChild(routes), LayoutModule, FormsModule, ReactiveFormsModule,MatStepperModule,MatFormFieldModule, MatInputModule,
-       MatButtonModule, MatCheckboxModule,MatGridListModule
+       MatButtonModule, MatCheckboxModule,MatGridListModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule, MatTabsModule, MatPaginatorModule,
+       MatSortModule, MatCardModule,MatTableModule, MatDialogModule, MatMenuModule, NgxPaginationModule, Ng2SearchPipeModule, Ng2OrderModule
 
 
 
@@ -68,7 +74,8 @@ const routes: Routes = [
         MenuComponent,
         AddLeadsComponent,
         QuickCallComponent,
-        QuickLeadComponent
+        QuickLeadComponent,
+        CallComponent
     ]
 })
 export class LeadsModule { }

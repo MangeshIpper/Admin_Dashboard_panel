@@ -27,27 +27,27 @@ const routes: Routes = [
                 "component": IndexComponent,
                 "children": [
                     {
-                        "path": "index/funfacts",
+                        "path": "funfacts",
                         "component": FunfactsComponent
                     },
                     {
-                        "path": "index/summary",
+                        "path": "summary",
                         "component": SummaryComponent
                     },
                     {
-                        "path": "index/analytics",
+                        "path": "analytics",
                         "component": AnalyticsComponent
                     },
                     {
-                        "path": "index/inventory",
+                        "path": "inventory",
                         "component": InventoryComponent
                     },
                     {
-                        "path": "index/leaderboard",
+                        "path": "leaderboard",
                         "component": LeaderBoardComponent
                     },
                     {
-                        "path": "index/actionchange",
+                        "path": "actionchange",
                         "component": ActionChangesComponent
                     },
 
