@@ -223,12 +223,45 @@ button.btn.m-btn--pill.btn-secondary.btn-sm.toggle.continue_btn.mat-button._mat-
     width: 90%;
 }
 .stepper_field_extrimefull{
-    width: 100%;
+    width: 95%;
 }
-
-
-
-
-
-
+.m-wizard.m-wizard--3 .m-wizard__form {
+    padding: 1rem 4rem 3rem 4rem;
+    border-left: .07rem solid #ebedf2;
+}
+a.btn.btn-success.m-btn.m-btn--custom.m-btn--icon.continue_link {
+    background-color: #5497F0;
+    border: unset;
+    font-size: 17px;
+    font-family: unset;
+    font-weight: 600;
+}
+i.la.la-arrow-right {
+    font-size: 17px;
+    font-weight: 600;
+}
+a.btn.btn-secondary.m-btn.m-btn--custom.m-btn--icon.back_link {
+    background-color: #5497F0;
+    color: white;
+    font-size: 17px;
+    font-family: unset;
+    font-weight: 600;
+}
+i.la.la-arrow-left {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.m-wizard.m-wizard--3.m-wizard--success .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number:hover>span {
+    background-color: #5497F0;
+}
+.m-wizard.m-wizard--3.m-wizard--success .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--current .m-wizard__step-info a.m-wizard__step-number>span {
+    background-color: #5497F0;
+}
+.m-wizard.m-wizard--3.m-wizard--success .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step.m-wizard__step--done .m-wizard__step-info a.m-wizard__step-number>span {
+    background-color: #5497F0;
+}
+.m-wizard.m-wizard--3.m-wizard--success .m-wizard__head .m-wizard__progress .progress .progress-bar {
+    background-color: #5497F0;
+}
 
